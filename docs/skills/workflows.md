@@ -8,3 +8,4 @@
 |------|------|------|----------|
 | [宏基因组组装工作流](workflows/assembly-workflow.md) | advanced | metagenomics, assembly, binning | 2026-03-18 |
 | [宏基因组组装工作流](workflows/assembly-workflow.md) | advanced | metagenomics, assembly, binning | 2026-03-18 |
+| [宏基因组组装工作流](workflows/assembly-workflow.md) | advanced | metagenomics, assembly, binning | 2026-03-18 |

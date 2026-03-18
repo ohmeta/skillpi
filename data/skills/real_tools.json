@@ -1,0 +1,169 @@
+[
+  {
+    "id": "dada2",
+    "type": "tool",
+    "data": {
+      "name": "dada2",
+      "version": null,
+      "description": "Accurate sample inference from amplicon data with single nucleotide resolution",
+      "category": "tool",
+      "url": "https://github.com/benjjneb/dada2",
+      "repo_url": "https://github.com/benjjneb/dada2",
+      "homepage": "http://benjjneb.github.io/dada2/",
+      "paper_url": null,
+      "installation": "# 在 R 中安装\n# install.packages('dada2')",
+      "usage_example": "\n[![Build Status](https://github.com/benjjneb/dada2/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/benjjneb/dada2/actions/workflows/pages/pages-build-deployment)\n\n# dada2\n\nExact sample inference from high-throughput amplicon data. Resolves real variants differing by as little as one nucleotide. Visit [the DADA2 website](https://benjjneb.github.io/dada2/index.html) for the most detailed and up-to-date documentation.\n\n### Installation\n\nThe dada2 package binaries are available through Bioconductor:\n\n```S\n## try http:// if https:// URLs are not supported\nif (!requireNamespace(\"BiocManager\", quietly=TRUE))\n    install.packages(\"BiocManager\")\nBiocManager::install(\"dada2\")\n```\n\nIn order to install dada2 from source (and get the latest and greatest new features) see our [installation from source instructions](https://benjjneb.github.io/dada2/dada-installation.html).\n\n### Documentation\n\nThe [tutorial walkthrough of the DADA2 pipeline on paired end Illumina Miseq d",
+      "tags": [
+        "microbiome",
+        "bioinformatics",
+        "bioconductor",
+        "taxonomy",
+        "amplicon",
+        "metagenomics",
+        "metabarcoding"
+      ],
+      "skill_level": "intermediate",
+      "last_updated": "2026-03-18T12:50:09.448492"
+    },
+    "created_at": "2026-03-18T12:50:09.448619",
+    "updated_at": "2026-03-18T12:50:09.448621"
+  },
+  {
+    "id": "metaphlan",
+    "type": "tool",
+    "data": {
+      "name": "MetaPhlAn",
+      "version": null,
+      "description": "MetaPhlAn is a computational tool for profiling the composition of microbial communities from metagenomic shotgun sequencing data",
+      "category": "tool",
+      "url": "https://github.com/biobakery/MetaPhlAn",
+      "repo_url": "https://github.com/biobakery/MetaPhlAn",
+      "homepage": "http://segatalab.cibio.unitn.it/tools/metaphlan/index.html",
+      "paper_url": null,
+      "installation": "pip install MetaPhlAn",
+      "usage_example": "# MetaPhlAn: Metagenomic Phylogenetic Analysis\r\n[![install with bioconda](https://img.shields.io/badge/install%20with-bioconda-brightgreen.svg?style=flat)](http://bioconda.github.io/recipes/metaphlan/README.html) [![PyPI - Downloads](https://img.shields.io/pypi/dm/metaphlan?label=MetaPhlAn%20on%20PyPi)](https://pypi.org/project/MetaPhlAn/) [![MetaPhlAn on DockerHub](https://img.shields.io/docker/pulls/biobakery/metaphlan?label=MetaPhlAn%20on%20DockerHub)](https://hub.docker.com/r/biobakery/metaphlan) [![Build MetaPhlAn package](https://github.com/biobakery/MetaPhlAn/workflows/Build%20MetaPhlAn%20package/badge.svg?branch=3.0)](https://github.com/biobakery/MetaPhlAn/actions?query=workflow%3A%22Build+MetaPhlAn+package%22)\r\n\r\nMetaPhlAn is a computational tool for species-level microbial profiling (bacteria, archaea, eukaryotes, and viruses) from metagenomic shotgun sequencing data. \r\nStrainPhlAn (available within MetaPhlAn) allows strain-level microbial population genomics.\r\n\r\n------------",
+      "tags": [
+        "public",
+        "tools",
+        "biobakery",
+        "python",
+        "metagenomics",
+        "python-tools"
+      ],
+      "skill_level": "intermediate",
+      "last_updated": "2026-03-18T12:50:11.441110"
+    },
+    "created_at": "2026-03-18T12:50:11.441204",
+    "updated_at": "2026-03-18T12:50:11.441204"
+  },
+  {
+    "id": "emperor",
+    "type": "tool",
+    "data": {
+      "name": "emperor",
+      "version": null,
+      "description": "Emperor a tool for the analysis and visualization of large microbial ecology datasets",
+      "category": "tool",
+      "url": "https://github.com/biocore/emperor",
+      "repo_url": "https://github.com/biocore/emperor",
+      "homepage": "http://biocore.github.io/emperor/",
+      "paper_url": null,
+      "installation": null,
+      "usage_example": "Emperor\n=======\n\n[![Join the chat at https://gitter.im/biocore/emperor](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/biocore/emperor?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![](https://github.com/biocore/emperor/workflows/Emperor%20CI/badge.svg)](https://github.com/biocore/emperor/actions) [![Coverage Status](https://coveralls.io/repos/biocore/emperor/badge.svg)](https://coveralls.io/r/biocore/emperor)\n\nEmperor is a next-generation tool for the analysis and visualization of large microbial ecology datasets. Amongst its many features, Emperor provides a modern user interface that can be rapidly adjusted to your data analysis workflow.\n\nTo start using Emperor, please refer to the [installation notes](INSTALL.md).\n\nBefore contributing code to Emperor, please familiarize yourself with the [contributing guidelines](CONTRIBUTING.md).\n\n## Usage\n\nYou can start using Emperor through [QIIME 2](https://qiime2.org)'s [interfaces](https://docs.qii",
+      "tags": [
+        "microbiome",
+        "visualization",
+        "emperor",
+        "python",
+        "bioinformatics",
+        "ordination",
+        "biplots"
+      ],
+      "skill_level": "intermediate",
+      "last_updated": "2026-03-18T12:50:13.267831"
+    },
+    "created_at": "2026-03-18T12:50:13.267923",
+    "updated_at": "2026-03-18T12:50:13.267924"
+  },
+  {
+    "id": "microbiome",
+    "type": "tool",
+    "data": {
+      "name": "microbiome",
+      "version": null,
+      "description": "microbiome R package",
+      "category": "tool",
+      "url": "https://github.com/microbiome/microbiome",
+      "repo_url": "https://github.com/microbiome/microbiome",
+      "homepage": null,
+      "paper_url": null,
+      "installation": "# 在 R 中安装\n# install.packages('microbiome')",
+      "usage_example": "<!--![Banner](https://github.com/microbiome/microbiome/blob/master/vignettes/figure/composition-example4-1.png)-->\n<!--[![Follow](https://img.shields.io/twitter/follow/ropengov.svg?style=social)](https://twitter.com/intent/follow?screen_name=ropengov)-->\n\nmicrobiome R package\n==========\n\n<br>\n\n[![Join the chat at https://gitter.im/microbiome/microbiome](https://badges.gitter.im/microbiome/microbiome.svg)](https://gitter.im/microbiome/microbiome?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)\n[![Build Status](https://github.com/microbiome/microbiome/actions/workflows/check-bioc-devel.yml/badge.svg)](https://github.com/microbiome/microbiome/actions/workflows/check-bioc-devel.yml)\n[![codecov.io](https://codecov.io/github/microbiome/microbiome/coverage.svg?branch=master)](https://codecov.io/github/microbiome/microbiome?branch=master)\n[![PRs Welcome][prs-badge]][prs]\n[![Watch on GitHub][github-watch-badge]][github-watch]\n[![Star on GitHub][github-star-badge]][gith",
+      "tags": [
+        "microbiome",
+        "microbiology",
+        "microbiome-analysis",
+        "r",
+        "phyloseq",
+        "human-microbiome",
+        "population-study",
+        "hitchip",
+        "hitchip-atlas"
+      ],
+      "skill_level": "intermediate",
+      "last_updated": "2026-03-18T12:50:15.295135"
+    },
+    "created_at": "2026-03-18T12:50:15.295221",
+    "updated_at": "2026-03-18T12:50:15.295221"
+  },
+  {
+    "id": "scikit-bio",
+    "type": "tool",
+    "data": {
+      "name": "scikit-bio",
+      "version": "0.7.2",
+      "description": "Data structures, algorithms and educational resources for bioinformatics.",
+      "category": "tool",
+      "url": "https://pypi.org/project/scikit-bio/",
+      "repo_url": "https://github.com/scikit-bio/scikit-bio",
+      "homepage": null,
+      "paper_url": null,
+      "installation": "pip install scikit-bio",
+      "usage_example": null,
+      "tags": [
+        "Scientific/Engineering",
+        "Bio-Informatics",
+        "Libraries"
+      ],
+      "skill_level": "intermediate",
+      "last_updated": "2026-03-18T12:50:16.438684"
+    },
+    "created_at": "2026-03-18T12:50:16.438796",
+    "updated_at": "2026-03-18T12:50:16.438797"
+  },
+  {
+    "id": "biom-format",
+    "type": "tool",
+    "data": {
+      "name": "biom-format",
+      "version": "2.1.17",
+      "description": "Biological Observation Matrix (BIOM) format",
+      "category": "tool",
+      "url": "https://pypi.org/project/biom-format/",
+      "repo_url": null,
+      "homepage": null,
+      "paper_url": null,
+      "installation": "pip install biom-format",
+      "usage_example": null,
+      "tags": [
+        "Bio-Informatics",
+        "Application Frameworks",
+        "Python Modules"
+      ],
+      "skill_level": "intermediate",
+      "last_updated": "2026-03-18T12:50:17.511101"
+    },
+    "created_at": "2026-03-18T12:50:17.511188",
+    "updated_at": "2026-03-18T12:50:17.511188"
+  }
+]
