@@ -1,0 +1,70 @@
+# Snakemake pipeline for SkillPI
+# 自动抓取微生物组信息学工具的文档和使用技巧
+
+import os
+from pathlib import Path
+
+# 配置
+configfile: "config.yaml"
+
+# 默认目标
+default_target: "all"
+
+# 临时文件
+TEMP_DIR = "data/raw"
+SKILLS_DIR = "data/skills"
+DOCS_DIR = "docs"
+
+# 所有目标
+rule all:
+    input:
+        docs = expand("{docs}/index.md", docs=DOCS_DIR),
+        skills = f"{SKILLS_DIR}/all_skills.json"
+
+# 从 GitHub 抓取工具信息
+rule fetch_github:
+    output:
+        f"{SKILLS_DIR}/github_tools.json"
+    params:
+        config = "data/sources.yaml"
+    script:
+        "scripts/fetch_github.py"
+
+# 从 PyPI 抓取工具信息
+rule fetch_pypi:
+    output:
+        f"{SKILLS_DIR}/pypi_tools.json"
+    params:
+        config = "data/sources.yaml"
+    script:
+        "scripts/fetch_pypi.py"
+
+# 合并所有技能数据
+rule merge_skills:
+    input:
+        github = f"{SKILLS_DIR}/github_tools.json",
+        pypi = f"{SKILLS_DIR}/pypi_tools.json"
+    output:
+        f"{SKILLS_DIR}/all_skills.json"
+    script:
+        "scripts/merge_skills.py"
+
+# 生成文档网站
+rule generate_docs:
+    input:
+        f"{SKILLS_DIR}/all_skills.json"
+    output:
+        f"{DOCS_DIR}/index.md"
+    params:
+        output_dir = DOCS_DIR
+    script:
+        "scripts/generate_docs.py"
+
+# 清理临时文件
+rule clean:
+    shell:
+        """
+        rm -rf {TEMP_DIR}/*
+        rm -rf {SKILLS_DIR}/*.json
+        echo "清理完成"
+        """
