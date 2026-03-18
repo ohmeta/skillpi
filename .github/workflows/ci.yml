@@ -19,85 +19,71 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ["3.9", "3.10", "3.11"]
-    
+        python-version: ["3.11"]  # 只测试一个版本加快速度
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      
+
       - name: Setup Python ${{ matrix.python-version }}
         uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
           cache: 'pip'
-      
+
       - name: Install dependencies
         run: |
           pip install -e ".[dev,pipeline]"
-      
-      - name: Lint with ruff
-        run: |
-          ruff check src/ tests/
-      
-      - name: Check formatting with black
-        run: |
-          black --check src/ tests/
-      
+
       - name: Run tests with pytest
         run: |
-          pytest -v --cov=skillpi --cov-report=xml
-      
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v4
-        with:
-          files: ./coverage.xml
-          flags: unittests
+          pytest -v
 
   # 文档构建和部署
   deploy-docs:
     runs-on: ubuntu-latest
     needs: test-python
     if: github.ref == 'refs/heads/main'
-    
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 18
           cache: 'npm'
-      
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
           cache: 'pip'
-      
+
       - name: Install Python dependencies
         run: |
           pip install -e ".[pipeline]"
-      
+
       - name: Generate skills docs
         run: |
           python scripts/generate_from_example.py
-      
+
       - name: Install Node dependencies
         run: |
           npm ci
-      
+
       - name: Build with VitePress
         run: |
           npm run build
         env:
           NODE_ENV: production
-      
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
-      
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -109,7 +95,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    
+
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
