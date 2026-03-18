@@ -18,7 +18,7 @@ SkillPI 是一个自动化的微生物组信息学技能目录生成系统，通
 
 ```bash
 # 克隆仓库
-git clone https://github.com/yourusername/skillpi.git
+git clone https://github.com/ohmeta/skillpi.git
 cd skillpi
 
 # 创建虚拟环境
@@ -40,13 +40,17 @@ mkdocs serve
 # 访问 http://localhost:8000
 ```
 
-### 3. 使用 Snakemake Pipeline（自动抓取）
+### 3. 部署到 GitHub Pages
 
 ```bash
-# 编辑 data/sources.yaml 配置数据源
-# 然后运行：
-cd pipelines
-snakemake --cores all
+# 方式 1: 使用一键脚本
+./scripts/deploy.sh
+
+# 方式 2: 使用 GitHub Actions
+# 推送代码后自动部署
+git push origin main
+
+# 访问：https://ohmeta.github.io/skillpi
 ```
 
 ### 4. 使用 CLI 工具
