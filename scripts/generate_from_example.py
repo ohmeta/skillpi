@@ -9,7 +9,7 @@ from pathlib import Path
 from datetime import datetime
 
 from skillpi.models import Skill, SkillCategory, Tool, Workflow, Concept, SkillLevel
-from skillpi.generators import MkDocsGenerator
+# from skillpi.generators import MkDocsGenerator
 
 
 def load_example_skills():
@@ -47,21 +47,11 @@ def main():
     
     print(f"✓ 保存到 {output_file}")
     
-    # 生成文档
-    print("\n生成文档网站...")
-    generator = MkDocsGenerator(str(skills_dir), ".")
-    success = generator.generate()
-    
-    if success:
-        print("\n✓ 文档生成完成！")
-        print("\n查看文档网站:")
-        print("  mkdocs serve")
-        print("  访问 http://localhost:8000")
-    else:
-        print("\n✗ 文档生成失败")
-        return 1
-    
-    return 0
+    print(f"\n✓ 技能数据生成完成！")
+    print(f"\n下一步:")
+    print(f"  npm install      # 安装依赖")
+    print(f"  npm run dev      # 启动文档网站")
+    print(f"  npm run build    # 构建静态站点")
 
 
 if __name__ == "__main__":

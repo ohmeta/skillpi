@@ -11,6 +11,9 @@ from .models import Skill, Tool, Workflow, Concept, SkillCategory
 from .importer import SkillImporter, SkillExporter
 from .assessor import auto_assess_skill
 
+# 移除 MkDocs 导入
+# from .generators import MkDocsGenerator
+
 console = Console()
 
 
@@ -140,18 +143,16 @@ def assess(input_file: str, auto_apply: bool, output: str):
 
 
 @main.command()
-@click.option("--input", "-i", "input_dir", default="data/skills", help="技能数据目录")
+@click.option("--input", "-i", "input_file", required=True, help="技能 JSON 文件")
 @click.option("--output", "-o", default="docs", help="文档输出目录")
-@click.option("--format", "doc_format", type=click.Choice(["mkdocs", "html", "json"]), 
-              default="mkdocs", help="输出格式")
-def generate(input_dir: str, output: str, doc_format: str):
-    """生成文档网站"""
-    console.print(f"[green]生成{doc_format}文档...[/green]")
-    console.print(f"输入目录：{input_dir}")
+def generate(input_file: str, output: str):
+    """生成文档网站 (VitePress)"""
+    console.print(f"[green]生成 VitePress 文档...[/green]")
+    console.print(f"输入文件：{input_file}")
     console.print(f"输出目录：{output}")
     
-    # TODO: 实现文档生成逻辑
-    console.print("[yellow]提示:[/yellow] 文档生成功能开发中...")
+    # TODO: 实现 VitePress 文档生成逻辑
+    console.print("[yellow]提示:[/yellow] 请使用 npm run build 构建文档")
 
 
 @main.command()

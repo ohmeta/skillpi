@@ -74,7 +74,7 @@ if results:
     generator.generate()
     
     print(f'✓ 文档生成完成')
-    print(f'  查看：mkdocs serve')
+    print(f'  查看：npm run dev')
     print('='*70)
 else:
     print('\n没有成功抓取到任何工具')

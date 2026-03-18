@@ -418,7 +418,7 @@ def main():
     generator.generate()
     
     print(f"✓ 文档生成完成")
-    print(f"  查看：mkdocs serve")
+    print(f"  查看：npm run dev")
     print("="*70)
 
 if __name__ == "__main__":
