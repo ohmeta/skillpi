@@ -1,0 +1,288 @@
+[
+  {
+    "id": "metaphlan-4",
+    "type": "tool",
+    "data": {
+      "name": "MetaPhlAn 4",
+      "version": "4.2.4",
+      "description": "用于从宏基因组鸟枪法测序数据中进行物种级微生物组成分析的工具（细菌、古菌、真核生物和病毒）",
+      "category": "profiling",
+      "url": "https://github.com/biobakery/metaphlan",
+      "repo_url": null,
+      "homepage": "https://segatalab.cibio.unitn.it/tools/metaphlan/",
+      "paper_url": "https://www.nature.com/articles/s41587-023-01688-w",
+      "installation": "conda install -c bioconda metaphlan",
+      "usage_example": "# 基本运行\nmetaphlan input.fastq.gz --output_file profile.txt\n\n# 使用病毒数据库\nmetaphlan input.fastq.gz --output_file profile.txt --input_type fastq --nproc 8\n\n# 菌株级分析\nmetaphlan input.fastq.gz --output_file profile.txt --strain_profiler true",
+      "tags": [
+        "metagenomics",
+        "taxonomic-profiling",
+        "species-level",
+        "strain-level",
+        "virus"
+      ],
+      "skill_level": "beginner",
+      "last_updated": "2026-03-18T13:01:06.426989"
+    },
+    "created_at": "2026-03-18T13:01:06.427004",
+    "updated_at": "2026-03-18T13:01:06.427004"
+  },
+  {
+    "id": "humann-3",
+    "type": "tool",
+    "data": {
+      "name": "HUMAnN 3",
+      "version": "3.0",
+      "description": "用于从宏基因组或宏转录组数据中高效、准确地分析微生物群落通路存在/缺失和丰度的流程（功能分析）",
+      "category": "functional-profiling",
+      "url": "https://github.com/biobakery/humann",
+      "repo_url": null,
+      "homepage": "http://huttenhower.sph.harvard.edu/humann",
+      "paper_url": "https://doi.org/10.7554/eLife.65088",
+      "installation": "# 推荐安装\npip install humann\n\n# 或从源码\ngit clone https://github.com/biobakery/humann\ncd humann\npython setup.py install",
+      "usage_example": "# 基本运行\nhumann --input sample.fastq --output output_dir\n\n# 使用特定数据库\nhumann --input sample.fastq --output output_dir --threads 8\n\n# 标准化输出\nhumann_renorm_table --input sample_genefamilies.tsv \\\n    --output sample_genefamilies_relab.tsv --units relab",
+      "tags": [
+        "metagenomics",
+        "functional-profiling",
+        "pathway-analysis",
+        "metatranscriptomics"
+      ],
+      "skill_level": "intermediate",
+      "last_updated": "2026-03-18T13:01:06.427012"
+    },
+    "created_at": "2026-03-18T13:01:06.427014",
+    "updated_at": "2026-03-18T13:01:06.427014"
+  },
+  {
+    "id": "biobakery-workflow",
+    "type": "workflow",
+    "data": {
+      "name": "bioBakery Workflow",
+      "description": "Huttenhower 实验室开发的微生物群落分析工具集和教程平台，提供 MetaPhlAn、HUMAnN 等工具的集成环境",
+      "steps": [
+        "1. 质量控制（fastp）",
+        "2. 物种分类谱分析（MetaPhlAn）",
+        "3. 功能谱分析（HUMAnN）",
+        "4. 下游统计分析"
+      ],
+      "tools_used": [
+        "MetaPhlAn",
+        "HUMAnN",
+        "fastp"
+      ],
+      "input_format": "FASTQ (宏基因组或宏转录组)",
+      "output_format": "物种丰度表、通路丰度表",
+      "documentation_url": "https://huttenhower.sph.harvard.edu/biobakery",
+      "tags": [
+        "workflow",
+        "metagenomics",
+        "integrated-platform",
+        "tutorial"
+      ],
+      "skill_level": "intermediate",
+      "last_updated": "2026-03-18T13:01:06.427020"
+    },
+    "created_at": "2026-03-18T13:01:06.427051",
+    "updated_at": "2026-03-18T13:01:06.427051"
+  },
+  {
+    "id": "qiime2-amplicon",
+    "type": "tool",
+    "data": {
+      "name": "QIIME 2 (Amplicon)",
+      "version": null,
+      "description": "强大的微生物组扩增子分析平台，支持从原始测序数据到统计分析和可视化的完整流程",
+      "category": "amplicon-analysis",
+      "url": "https://github.com/qiime2/qiime2",
+      "repo_url": null,
+      "homepage": "https://qiime2.org",
+      "paper_url": "https://doi.org/10.1038/s41587-019-0209-9",
+      "installation": "# Conda 安装（推荐）\nconda install -c qiime2 -c conda-forge qiime2\n\n# Docker 安装\ndocker pull qiime2/core:2024.2",
+      "usage_example": "# 导入数据\nqiime tools import \\\n  --type 'SampleData[SequencesWithQuality]' \\\n  --input-path demux \\\n  --output-path demux.qza\n\n# DADA2 去噪\nqiime dada2 denoise-paired \\\n  --i-demultiplexed-seqs demux.qza \\\n  --o-table table.qza \\\n  --o-representative-sequences rep-seqs.qza \\\n  --o-denoising-stats stats.qza\n\n# 多样性分析\nqiime diversity core-metrics-phylogenetic \\\n  --i-phylogeny rooted-tree.qza \\\n  --i-table table.qza \\\n  --p-sampling-depth 10000 \\\n  --output-dir core-metrics-results",
+      "tags": [
+        "16S",
+        "amplicon",
+        "its",
+        "analysis",
+        "visualization",
+        "reproducible"
+      ],
+      "skill_level": "intermediate",
+      "last_updated": "2026-03-18T13:01:06.427057"
+    },
+    "created_at": "2026-03-18T13:01:06.427059",
+    "updated_at": "2026-03-18T13:01:06.427059"
+  },
+  {
+    "id": "dada2-pipeline",
+    "type": "tool",
+    "data": {
+      "name": "DADA2",
+      "version": "1.30",
+      "description": "高分辨率的样本推断算法，可从扩增子测序数据中精确识别序列变异（ASV），替代传统的 OTU 聚类方法",
+      "category": "denoising",
+      "url": "https://github.com/benjjneb/dada2",
+      "repo_url": null,
+      "homepage": "https://benjjneb.github.io/dada2/",
+      "paper_url": "https://doi.org/10.1038/nmeth.3869",
+      "installation": "# R/Bioconductor 安装\nif (!requireNamespace(\"BiocManager\", quietly = TRUE))\n    install.packages(\"BiocManager\")\nBiocManager::install(\"dada2\")\n\n# 或使用 QIIME 2 插件\nqiime dada2 denoise-paired ...",
+      "usage_example": "# R 代码示例\nlibrary(dada2)\n\n# 1. 过滤和截断\nfiltFs <- filterAndTrim(fnFs, filtFs, truncLen=c(240,0))\n\n# 2. 学习错误率\nerrF <- learnErrors(filtFs)\n\n# 3. 去噪\ndadaFs <- dada(filtFs, err=errF)\n\n# 4. 合并双端 reads\nmergers <- mergePairs(dadaFs, filtFs, dadaRs, filtRs)\n\n# 5. 构建 ASV 表\nseqtab <- makeSequenceTable(mergers)",
+      "tags": [
+        "16S",
+        "denoising",
+        "ASV",
+        "amplicon",
+        "R",
+        "bioconductor"
+      ],
+      "skill_level": "intermediate",
+      "last_updated": "2026-03-18T13:01:06.427063"
+    },
+    "created_at": "2026-03-18T13:01:06.427065",
+    "updated_at": "2026-03-18T13:01:06.427065"
+  },
+  {
+    "id": "mothur",
+    "type": "tool",
+    "data": {
+      "name": "Mothur",
+      "version": "1.48.5",
+      "description": "用于微生物生态学分析的综合工具，专注于 16S rRNA 基因序列分析和微生物群落多样性研究",
+      "category": "amplicon-analysis",
+      "url": "https://github.com/mothur/mothur",
+      "repo_url": null,
+      "homepage": "https://www.mothur.org",
+      "paper_url": "https://doi.org/10.1128/AEM.01541-09",
+      "installation": "# Ubuntu/Debian\nsudo apt-get install mothur\n\n# Conda\nconda install -c bioconda mothur\n\n# 源码编译\ngit clone https://github.com/mothur/mothur.git\ncd mothur\nmake -j",
+      "usage_example": "# 标准 MiSeq SOP\nmothur > make.contigs(file=stability.files, processors=8)\nmothur > screen.seqs(fasta=current, maxambig=0, maxlength=275)\nmothur > unique.seqs(fasta=current)\nmothur > align.seqs(fasta=current, reference=silva.v4.fasta)\nmothur > filter.seqs(fasta=current, vertical=T, trump=.)\nmothur > pre.cluster(fasta=current, diffs=2)\nmothur > chimera.vsearch(fasta=current)\nmothur > classify.seqs(fasta=current, reference=trainset9_032012.pds.fasta)\nmothur > cluster.split(fasta=current, count=current, splitmethod=classify)",
+      "tags": [
+        "16S",
+        "amplicon",
+        "OTU",
+        "diversity",
+        "SOP"
+      ],
+      "skill_level": "intermediate",
+      "last_updated": "2026-03-18T13:01:06.427070"
+    },
+    "created_at": "2026-03-18T13:01:06.427071",
+    "updated_at": "2026-03-18T13:01:06.427071"
+  },
+  {
+    "id": "fastp",
+    "type": "tool",
+    "data": {
+      "name": "Fastp",
+      "version": "1.0",
+      "description": "超快速的 FASTQ 数据预处理和质量控制工具，集成了质量分析、过滤、修剪、去重等多种功能",
+      "category": "quality-control",
+      "url": "https://github.com/OpenGene/fastp",
+      "repo_url": null,
+      "homepage": "http://opengene.org/fastp/",
+      "paper_url": "https://doi.org/10.1002/IMT2.107",
+      "installation": "# Conda\nconda install -c bioconda fastp\n\n# Docker\ndocker pull opengene/fastp\n\n# 预编译二进制\nwget http://opengene.org/fastp/fastp\nchmod a+x ./fastp",
+      "usage_example": "# 双端数据质控\nfastp -i in.R1.fq.gz -I in.R2.fq.gz \\\n  -o out.R1.fq.gz -O out.R2.fq.gz \\\n  -h report.html -j report.json \\\n  -w 8\n\n# 自动接头检测\nfastp -i input.fq -o output.fq --detect_adapter_for_pe\n\n# UMI 处理\nfastp -i input.fq -o output.fq -U index1",
+      "tags": [
+        "QC",
+        "fastq",
+        "adapter-trimming",
+        "filtering",
+        "ultra-fast"
+      ],
+      "skill_level": "beginner",
+      "last_updated": "2026-03-18T13:01:06.427076"
+    },
+    "created_at": "2026-03-18T13:01:06.427077",
+    "updated_at": "2026-03-18T13:01:06.427077"
+  },
+  {
+    "id": "megahit",
+    "type": "tool",
+    "data": {
+      "name": "Megahit",
+      "version": "1.2.9",
+      "description": "超快速且内存高效的 NGS 组装器，主要针对宏基因组优化，基于简洁 de Bruijn 图技术",
+      "category": "assembly",
+      "url": "https://github.com/voutcn/megahit",
+      "repo_url": null,
+      "homepage": "https://github.com/voutcn/megahit",
+      "paper_url": "https://doi.org/10.1093/bioinformatics/btv033",
+      "installation": "# Conda\nconda install -c bioconda megahit\n\n# Docker\ndocker run -v $(pwd):/workspace vout/megahit\n\n# 预编译二进制\nwget https://github.com/voutcn/megahit/releases/download/v1.2.9/MEGAHIT-1.2.9-Linux-x86_64-static.tar.gz\ntar xvzf MEGAHIT-*.tar.gz",
+      "usage_example": "# 宏基因组组装\nmegahit -1 pe_1.fq -2 pe_2.fq -o output_dir\n\n# 大型复杂宏基因组\nmegahit -1 reads_1.fq -2 reads_2.fq \\\n  --presets meta-large -o output_dir\n\n# 从中间结果继续\nmegahit --continue -o output_dir",
+      "tags": [
+        "metagenomics",
+        "assembly",
+        "de-bruijn-graph",
+        "memory-efficient"
+      ],
+      "skill_level": "advanced",
+      "last_updated": "2026-03-18T13:01:06.427081"
+    },
+    "created_at": "2026-03-18T13:01:06.427082",
+    "updated_at": "2026-03-18T13:01:06.427083"
+  },
+  {
+    "id": "16s-rrna-sequencing",
+    "type": "concept",
+    "data": {
+      "name": "16S rRNA 测序",
+      "definition": "16S rRNA 基因是原核生物核糖体小亚基的组成部分，长度约 1500bp，包含 9 个可变区（V1-V9）和保守区，广泛用于微生物分类和系统发育分析",
+      "explanation": "16S rRNA 基因测序是微生物组研究中最常用的方法：\n\n**原理**：\n1. 保守区用于设计通用引物（如 27F/1492R）\n2. 可变区包含物种特异性序列\n3. 通过序列比对构建系统发育树\n\n**常用引物**：\n- V3-V4 区：341F-805R\n- V4 区：515F-806R（Earth Microbiome Project）\n\n**分析流程**：\n质控 → 拼接 → 去噪/OTU 聚类 → 物种注释 → 多样性分析",
+      "related_concepts": [
+        "扩增子测序",
+        "OTU",
+        "ASV",
+        "系统发育树",
+        "Alpha 多样性",
+        "Beta 多样性"
+      ],
+      "examples": [
+        "Illumina MiSeq 2x250bp 测序 V3-V4 区",
+        "使用 DADA2 进行去噪获得 ASV",
+        "使用 QIIME 2 进行多样性分析"
+      ],
+      "references": [],
+      "tags": [
+        "16S",
+        "sequencing",
+        "taxonomy",
+        "amplicon",
+        "basics"
+      ],
+      "skill_level": "beginner",
+      "last_updated": "2026-03-18T13:01:06.427087"
+    },
+    "created_at": "2026-03-18T13:01:06.427099",
+    "updated_at": "2026-03-18T13:01:06.427100"
+  },
+  {
+    "id": "metagenomics-sequencing",
+    "type": "concept",
+    "data": {
+      "name": "宏基因组测序",
+      "definition": "宏基因组测序（鸟枪法测序）是对环境样本中所有微生物的总 DNA 进行测序，不依赖 PCR 扩增，可获得物种组成和功能基因信息",
+      "explanation": "**与 16S 测序的比较**：\n\n| 特征 | 16S 测序 | 宏基因组测序 |\n|------|----------|--------------|\n| 目标区域 | 16S rRNA 基因 | 全基因组 |\n| 物种分辨率 | 属/种水平 | 种/菌株水平 |\n| 功能信息 | 无 | 有（基因、通路） |\n| 成本 | 低 | 高 |\n| 数据量 | 1-5M reads | 20-100M reads |\n\n**典型应用**：\n- 物种组成分析（MetaPhlAn）\n- 功能谱分析（HUMAnN）\n- 基因组组装（MEGAHIT）\n- 菌株追踪",
+      "related_concepts": [
+        "鸟枪法测序",
+        "功能分析",
+        "基因组组装",
+        "分箱"
+      ],
+      "examples": [
+        "Illumina NovaSeq 2x150bp 测序",
+        "使用 MetaPhlAn 进行物种分析",
+        "使用 HUMAnN 进行通路分析"
+      ],
+      "references": [],
+      "tags": [
+        "metagenomics",
+        "shotgun",
+        "sequencing",
+        "functional-analysis"
+      ],
+      "skill_level": "intermediate",
+      "last_updated": "2026-03-18T13:01:06.427103"
+    },
+    "created_at": "2026-03-18T13:01:06.427105",
+    "updated_at": "2026-03-18T13:01:06.427105"
+  }
+]

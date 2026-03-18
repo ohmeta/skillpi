@@ -10,5 +10,7 @@
 | [Alpha 多样性](concepts/alpha-diversity.md) | intermediate | diversity, statistics, ecology | 2026-03-18 |
 | [16S rRNA 基因](concepts/16s-rrna-concept.md) | beginner | 16S, sequencing, taxonomy | 2026-03-18 |
 | [Alpha 多样性](concepts/alpha-diversity.md) | intermediate | diversity, statistics, ecology | 2026-03-18 |
+| [16S rRNA 测序](concepts/16s-rrna-sequencing.md) | beginner | 16S, sequencing, taxonomy | 2026-03-18 |
+| [宏基因组测序](concepts/metagenomics-sequencing.md) | intermediate | metagenomics, shotgun, sequencing | 2026-03-18 |
 | [16S rRNA 基因](concepts/16s-rrna-concept.md) | beginner | 16S, sequencing, taxonomy | 2026-03-18 |
 | [Alpha 多样性](concepts/alpha-diversity.md) | intermediate | diversity, statistics, ecology | 2026-03-18 |
