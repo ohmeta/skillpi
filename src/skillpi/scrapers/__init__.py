@@ -5,8 +5,8 @@
 """
 
 from .base import BaseScraper
+from .biorxiv import BioRxivScraper
 from .github import GitHubScraper
 from .pypi import PyPIScraper
-from .biorxiv import BioRxivScraper
 
 __all__ = ["BaseScraper", "GitHubScraper", "PyPIScraper", "BioRxivScraper"]
