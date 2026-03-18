@@ -4,10 +4,11 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: 'SkillPI',
   description: 'Skill Catalogue for Microbiome Informatics Study',
+  base: '/skillpi/',  // GitHub Pages 需要配置 base path
   lastUpdated: true,
-  
+
   head: [
-    ['link', { rel: 'icon', href: '/favicon.ico' }]
+    ['link', { rel: 'icon', href: '/skillpi/favicon.ico' }]
   ],
 
   themeConfig: {
