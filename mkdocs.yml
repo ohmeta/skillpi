@@ -103,6 +103,10 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 
+# 额外 CSS
+extra_css:
+  - stylesheets/extra.css
+
 # 自定义页面
 extra:
   social:
