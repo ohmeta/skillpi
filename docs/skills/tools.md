@@ -14,13 +14,6 @@
 | [fastp](tools/fastp) | 序列质量控制 | ⭐ 入门 | OpenGene |
 | [MEGAHIT](tools/megahit) | 宏基因组组装 | ⭐⭐⭐ 高级 | MEGAHIT |
 
-## 📦 其他工具
-
-- [Emperor](tools/emperor) - 微生物组可视化
-- [microbiome](tools/microbiome) - R 语言分析包
-- [scikit-bio](tools/scikit-bio) - Python 生物信息库
-- [biom-format](tools/biom-format) - BIOM 格式支持
-
 ## 🎯 工具选择建议
 
 ### 初学者
