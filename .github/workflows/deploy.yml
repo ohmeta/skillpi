@@ -40,7 +40,8 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -e ".[pipeline]"
-          pip install mkdocs-material
+          # 使用稳定的 mkdocs-material 版本
+          pip install mkdocs-material~=9.5.0
 
       - name: Generate skills docs
         run: |
