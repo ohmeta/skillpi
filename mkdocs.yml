@@ -1,0 +1,91 @@
+copyright: Copyright &copy; 2024 Your Name
+edit_uri: edit/main/docs/
+extra:
+  generator: false
+  social:
+  - icon: fontawesome/brands/github
+    link: https://github.com/yourusername/skillpi
+  - icon: fontawesome/brands/twitter
+    link: https://twitter.com/yourusername
+markdown_extensions:
+- admonition
+- attr_list
+- md_in_html
+- def_list
+- footnotes
+- toc:
+    permalink: true
+    toc_depth: 3
+- pymdownx.arithmatex:
+    generic: true
+- pymdownx.betterem:
+    smart_enable: all
+- pymdownx.caret
+- pymdownx.details
+- pymdownx.emoji
+- pymdownx.highlight:
+    anchor_linenums: true
+- pymdownx.inlinehilite
+- pymdownx.keys
+- pymdownx.magiclink:
+    repo: skillpi
+    repo_url_shorthand: true
+    user: yourusername
+- pymdownx.mark
+- pymdownx.smartsymbols
+- pymdownx.superfences
+- pymdownx.tabbed:
+    alternate_style: true
+- pymdownx.tasklist:
+    custom_checkbox: true
+- pymdownx.tilde
+nav:
+- 首页: index.md
+- 技能:
+  - 工具: skills/tools.md
+  - 工作流: skills/workflows.md
+  - 概念: skills/concepts.md
+plugins:
+- search:
+    lang:
+    - zh
+    - en
+repo_name: skillpi
+repo_url: https://github.com/yourusername/skillpi
+site_author: Your Name
+site_description: Skill Catalogue for Microbiome Informatics Study
+site_name: SkillPI
+site_url: https://yourusername.github.io/skillpi
+theme:
+  favicon: assets/favicon.ico
+  features:
+  - navigation.tabs
+  - navigation.tabs.sticky
+  - navigation.sections
+  - navigation.expand
+  - navigation.indexes
+  - navigation.top
+  - search.suggest
+  - search.highlight
+  - content.tabs.link
+  - content.code.annotation
+  - content.code.copy
+  font:
+    code: Roboto Mono
+    text: Roboto
+  language: zh
+  logo: assets/logo.png
+  name: material
+  palette:
+  - accent: indigo
+    primary: indigo
+    scheme: default
+    toggle:
+      icon: material/toggle-off
+      name: 切换到深色模式
+  - accent: indigo
+    primary: indigo
+    scheme: slate
+    toggle:
+      icon: material/toggle-on
+      name: 切换到浅色模式
