@@ -1,415 +1,283 @@
-# SkillPI
+---
+layout: home
+title: SkillPI
+titleTemplate: Skill Catalogue for Microbiome Informatics Study
 
-**Skill Catalogue for Microbiome Informatics Study**
+hero:
+  name: SkillPI
+  text: 微生物组信息学技能目录
+  tagline: Exploring the Human Microbiome - Seeking Healthy Microbiome
+  image:
+    src: /hero.svg
+    alt: SkillPI Logo
+  actions:
+    - theme: brand
+      text: 开始使用
+      link: /skills/tools
+    - theme: alt
+      text: 查看工具
+      link: /skills/tools
+    - theme: alt
+      text: GitHub
+      link: https://github.com/ohmeta/skillpi
 
-<div class="hero-banner">
-  <div class="hero-content">
-    <h1>🔬 Exploring the Human Microbiome</h1>
-    <p class="hero-subtitle">Discovering tools and techniques for seeking healthy microbiome</p>
-    <div class="hero-stats">
-      <div class="stat-card">
-        <span class="stat-number">16+</span>
-        <span class="stat-label">Tools & Workflows</span>
-      </div>
-      <div class="stat-card">
-        <span class="stat-number">4</span>
-        <span class="stat-label">Core Concepts</span>
-      </div>
-      <div class="stat-card">
-        <span class="stat-number">100%</span>
-        <span class="stat-label">Verified Data</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-## 📊 Skill Dashboard
-
-<div class="dashboard-grid">
-  <div class="dashboard-card tools-card">
-    <div class="card-header">
-      <span class="card-icon">🛠️</span>
-      <h3>Analysis Tools</h3>
-    </div>
-    <div class="card-content">
-      <ul class="tool-list">
-        <li><strong>MetaPhlAn 4</strong> - Species-level taxonomic profiling</li>
-        <li><strong>HUMAnN 3</strong> - Functional profiling</li>
-        <li><strong>QIIME 2</strong> - Amplicon analysis platform</li>
-        <li><strong>DADA2</strong> - ASV inference</li>
-        <li><strong>mothur</strong> - 16S analysis</li>
-        <li><strong>fastp</strong> - Quality control</li>
-        <li><strong>MEGAHIT</strong> - Metagenome assembly</li>
-      </ul>
-      <a href="skills/tools.md" class="card-link">View all tools →</a>
-    </div>
-  </div>
-
-  <div class="dashboard-card workflows-card">
-    <div class="card-header">
-      <span class="card-icon">🔄</span>
-      <h3>Workflows</h3>
-    </div>
-    <div class="card-content">
-      <ul class="workflow-list">
-        <li><strong>bioBakery</strong> - Integrated metagenomics workflow</li>
-        <li><strong>Amplicon Pipeline</strong> - 16S/ITS analysis workflow</li>
-      </ul>
-      <a href="skills/workflows.md" class="card-link">View workflows →</a>
-    </div>
-  </div>
-
-  <div class="dashboard-card concepts-card">
-    <div class="card-header">
-      <span class="card-icon">📖</span>
-      <h3>Core Concepts</h3>
-    </div>
-    <div class="card-content">
-      <ul class="concept-list">
-        <li><strong>16S rRNA Sequencing</strong> - Marker gene analysis</li>
-        <li><strong>Metagenomics</strong> - Shotgun sequencing</li>
-        <li><strong>Alpha Diversity</strong> - Within-sample diversity</li>
-        <li><strong>Beta Diversity</strong> - Between-sample diversity</li>
-      </ul>
-      <a href="skills/concepts.md" class="card-link">View concepts →</a>
-    </div>
-  </div>
-</div>
-
-## 🎯 Analysis Pipeline Overview
-
-<div class="pipeline-flow">
-  <div class="pipeline-stage">
-    <div class="stage-icon">📥</div>
-    <h4>Raw Data</h4>
-    <p>FASTQ files from sequencing</p>
-  </div>
-  <div class="pipeline-arrow">→</div>
-  <div class="pipeline-stage">
-    <div class="stage-icon">✨</div>
-    <h4>Quality Control</h4>
-    <p>fastp, Trimmomatic</p>
-  </div>
-  <div class="pipeline-arrow">→</div>
-  <div class="pipeline-stage">
-    <div class="stage-icon">🔍</div>
-    <h4>Analysis</h4>
-    <p>QIIME 2, DADA2, mothur</p>
-  </div>
-  <div class="pipeline-arrow">→</div>
-  <div class="pipeline-stage">
-    <div class="stage-icon">📊</div>
-    <h4>Profiling</h4>
-    <p>MetaPhlAn, HUMAnN</p>
-  </div>
-</div>
-
-## 🚀 Quick Start
-
-### For Beginners
-
-1. Start with **[16S rRNA Sequencing](skills/concepts/16s-rrna-sequencing.md)** concept
-2. Learn **[QIIME 2](skills/tools/qiime2-amplicon.md)** for amplicon analysis
-3. Try **[fastp](skills/tools/fastp.md)** for quality control
-
-### For Advanced Users
-
-1. Explore **[Metagenomics](skills/concepts/metagenomics-sequencing.md)** sequencing
-2. Use **[MetaPhlAn 4](skills/tools/metaphlan-4.md)** for species profiling
-3. Apply **[HUMAnN 3](skills/tools/humann-3.md)** for functional analysis
-4. Try **[bioBakery Workflow](skills/workflows/biobakery-workflow.md)** for integrated analysis
-
-## 🔬 Research Areas
-
-<div class="research-grid">
-  <div class="research-item">
-    <h4>🧬 Gut Microbiome</h4>
-    <p>Understanding the role of gut bacteria in human health and disease</p>
-  </div>
-  <div class="research-item">
-    <h4>🦠 Oral Microbiome</h4>
-    <p>Exploring oral microbial communities and their impact on systemic health</p>
-  </div>
-  <div class="research-item">
-    <h4>🌿 Skin Microbiome</h4>
-    <p>Studying skin microbial diversity and its protective functions</p>
-  </div>
-  <div class="research-item">
-    <h4>💊 Therapeutic Interventions</h4>
-    <p>Developing microbiome-based therapies for better health outcomes</p>
-  </div>
-</div>
-
-## 📈 Why SkillPI?
-
-| Feature | SkillPI | Other Resources |
-|---------|---------|-----------------|
-| **Verified Data** | ✅ From official docs | ❌ User-submitted |
-| **Auto-updated** | ✅ GitHub API | ❌ Manual |
-| **Usage Examples** | ✅ Real commands | ⚠️ Simplified |
-| **Paper Citations** | ✅ Complete | ⚠️ Partial |
-| **Difficulty Levels** | ✅ Auto-assessed | ❌ None |
-| **Complete Workflows** | ✅ End-to-end | ⚠️ Single tools |
-
-## 🎓 Learning Paths
-
-### Path 1: Amplicon Analysis
-```
-16S Concept → fastp QC → QIIME 2/DADA2 → Diversity Analysis
-```
-
-### Path 2: Metagenomics
-```
-Shotgun Concept → MEGAHIT Assembly → MetaPhlAn → HUMAnN → Statistics
-```
-
-## 📚 Resources
-
-- **[Documentation](https://ohmeta.github.io/skillpi)** - Complete skill catalog
-- **[GitHub](https://github.com/ohmeta/skillpi)** - Source code and issues
-- **[bioBakery Forum](https://forum.biobakery.org)** - Community support
-- **[QIIME 2 Forum](https://forum.qiime2.org)** - QIIME 2 support
-
+features:
+  - icon: 🛠️
+    title: 核心工具
+    details: 7 个精选微生物组分析工具，包括 MetaPhlAn 4、HUMAnN 3、QIIME 2 等
+    link: /skills/tools
+  - icon: 🔄
+    title: 完整工作流
+    details: 从原始数据到统计分析的完整分析流程
+    link: /skills/workflows
+  - icon: 📖
+    title: 核心概念
+    details: 16S 测序、宏基因组等关键概念详解
+    link: /skills/concepts
+  - icon: ✅
+    title: 真实验证
+    details: 所有工具信息均来自官方文档和论文
+    link: /about
+  - icon: 🚀
+    title: 快速上手
+    details: 清晰的学习路径和工具选择建议
+    link: /guide/quick-start
+  - icon: 📊
+    title: 持续更新
+    details: 通过 GitHub API 自动抓取最新工具信息
+    link: /guide/auto-update
 ---
 
-<div class="footer-note">
-  <p><strong>Seeking Healthy Microbiome</strong> 🔬</p>
-  <p>SkillPI helps researchers discover and master the tools needed for microbiome analysis</p>
+<div class="dashboard-section">
+  <h2 style="text-align: center; margin-bottom: 2rem;">📊 技能概览</h2>
+  
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-number">16+</div>
+      <div class="stat-label">工具与工作流</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">4</div>
+      <div class="stat-label">核心概念</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">100%</div>
+      <div class="stat-label">官方验证</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">22</div>
+      <div class="stat-label">Git Commits</div>
+    </div>
+  </div>
+</div>
+
+<div class="pipeline-section">
+  <h2 style="text-align: center; margin-bottom: 2rem;">🔬 分析流程</h2>
+  
+  <div class="pipeline-steps">
+    <div class="step">
+      <div class="step-icon">📥</div>
+      <h4>原始数据</h4>
+      <p>FASTQ 文件</p>
+    </div>
+    <div class="step-arrow">→</div>
+    <div class="step">
+      <div class="step-icon">✨</div>
+      <h4>质量控制</h4>
+      <p>fastp</p>
+    </div>
+    <div class="step-arrow">→</div>
+    <div class="step">
+      <div class="step-icon">🔍</div>
+      <h4>物种分析</h4>
+      <p>MetaPhlAn</p>
+    </div>
+    <div class="step-arrow">→</div>
+    <div class="step">
+      <div class="step-icon">📈</div>
+      <h4>功能分析</h4>
+      <p>HUMAnN</p>
+    </div>
+  </div>
+</div>
+
+<div class="research-section">
+  <h2 style="text-align: center; margin-bottom: 2rem;">🧬 研究领域</h2>
+  
+  <div class="research-grid">
+    <div class="research-card">
+      <h3>🧬 肠道微生物组</h3>
+      <p>理解肠道菌群在人类健康和疾病中的作用</p>
+    </div>
+    <div class="research-card">
+      <h3>🦠 口腔微生物组</h3>
+      <p>探索口腔微生物群落及其对全身健康的影响</p>
+    </div>
+    <div class="research-card">
+      <h3>🌿 皮肤微生物组</h3>
+      <p>研究皮肤微生物多样性及其保护功能</p>
+    </div>
+    <div class="research-card">
+      <h3>💊 治疗干预</h3>
+      <p>开发基于微生物组的疗法以改善健康结果</p>
+    </div>
+  </div>
 </div>
 
 <style>
-/* Hero Banner with Microbiome Background */
-.hero-banner {
-  background: linear-gradient(135deg, rgba(66, 153, 225, 0.9), rgba(91, 33, 182, 0.9)),
-              url('https://images.unsplash.com/photo-1576086213369-97a306d36557?w=1920&q=80');
-  background-size: cover;
-  background-position: center;
-  border-radius: 12px;
-  padding: 3rem;
+/* 统计卡片 */
+.dashboard-section {
+  padding: 4rem 2rem;
+  background: var(--vp-c-bg-soft);
+  border-radius: 16px;
   margin: 2rem 0;
-  color: white;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.hero-banner h1 {
-  color: white;
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.hero-subtitle {
-  font-size: 1.2rem;
-  opacity: 0.95;
-  margin-bottom: 2rem;
-}
-
-.hero-stats {
-  display: flex;
-  justify-content: center;
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
-  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .stat-card {
-  background: rgba(255, 255, 255, 0.2);
-  padding: 1rem 2rem;
-  border-radius: 8px;
-  backdrop-filter: blur(10px);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background: var(--vp-c-bg);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: var(--vp-shadow-2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--vp-shadow-4);
 }
 
 .stat-number {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
-  display: block;
+  color: var(--vp-c-brand);
+  margin-bottom: 0.5rem;
 }
 
 .stat-label {
-  font-size: 0.9rem;
-  opacity: 0.9;
+  font-size: 1rem;
+  color: var(--vp-c-text-2);
 }
 
-/* Dashboard Grid */
-.dashboard-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
+/* 流程步骤 */
+.pipeline-section {
+  padding: 4rem 2rem;
   margin: 2rem 0;
 }
 
-.dashboard-card {
-  background: white;
-  border-radius: 12px;
-  padding: 1.5rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border: 1px solid #e2e8f0;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.dashboard-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-}
-
-.card-header {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  margin-bottom: 1rem;
-  padding-bottom: 0.75rem;
-  border-bottom: 2px solid #e2e8f0;
-}
-
-.card-icon {
-  font-size: 1.5rem;
-}
-
-.card-header h3 {
-  margin: 0;
-  color: #1a202c;
-}
-
-.card-content ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 1rem 0;
-}
-
-.card-content li {
-  padding: 0.5rem 0;
-  border-bottom: 1px solid #f0f0f0;
-}
-
-.card-content li:last-child {
-  border-bottom: none;
-}
-
-.card-link {
-  display: inline-block;
-  color: #4299e1;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.2s;
-}
-
-.card-link:hover {
-  color: #2b6cb0;
-}
-
-/* Pipeline Flow */
-.pipeline-flow {
+.pipeline-steps {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 1rem;
-  margin: 2rem 0;
-  padding: 2rem;
-  background: #f7fafc;
-  border-radius: 12px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.pipeline-stage {
+.step {
   flex: 1;
   min-width: 150px;
+  background: var(--vp-c-bg);
+  padding: 2rem 1rem;
+  border-radius: 12px;
   text-align: center;
-  padding: 1rem;
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--vp-shadow-2);
+  transition: all 0.3s;
 }
 
-.stage-icon {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+.step:hover {
+  transform: scale(1.05);
+  box-shadow: var(--vp-shadow-4);
 }
 
-.pipeline-stage h4 {
+.step-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.step h4 {
   margin: 0.5rem 0;
-  color: #2d3748;
+  color: var(--vp-c-text-1);
 }
 
-.pipeline-stage p {
+.step p {
   margin: 0;
-  font-size: 0.875rem;
-  color: #718096;
-}
-
-.pipeline-arrow {
-  font-size: 1.5rem;
-  color: #4299e1;
-  font-weight: bold;
-}
-
-/* Research Grid */
-.research-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  margin: 2rem 0;
-}
-
-.research-item {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 8px;
-  border-left: 4px solid #4299e1;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-.research-item h4 {
-  margin: 0 0 0.5rem 0;
-  color: #2d3748;
-}
-
-.research-item p {
-  margin: 0;
-  color: #718096;
+  color: var(--vp-c-text-2);
   font-size: 0.9rem;
 }
 
-/* Footer Note */
-.footer-note {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+.step-arrow {
+  font-size: 1.5rem;
+  color: var(--vp-c-brand);
+  font-weight: bold;
+}
+
+/* 研究领域 */
+.research-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, var(--vp-c-bg-soft) 0%, var(--vp-c-bg) 100%);
+  border-radius: 16px;
+  margin: 2rem 0;
+}
+
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.research-card {
+  background: var(--vp-c-bg);
   padding: 2rem;
   border-radius: 12px;
-  text-align: center;
-  margin-top: 3rem;
+  border-left: 4px solid var(--vp-c-brand);
+  box-shadow: var(--vp-shadow-2);
+  transition: all 0.3s;
 }
 
-.footer-note p {
-  margin: 0.5rem 0;
+.research-card:hover {
+  box-shadow: var(--vp-shadow-4);
+  border-left-width: 6px;
 }
 
-.footer-note strong {
-  font-size: 1.2rem;
+.research-card h3 {
+  margin: 0 0 1rem 0;
+  color: var(--vp-c-text-1);
 }
 
-/* Responsive Design */
+.research-card p {
+  margin: 0;
+  color: var(--vp-c-text-2);
+  line-height: 1.6;
+}
+
+/* 响应式设计 */
 @media (max-width: 768px) {
-  .hero-banner {
-    padding: 2rem 1rem;
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
   
-  .hero-banner h1 {
-    font-size: 1.8rem;
-  }
-  
-  .hero-stats {
-    flex-direction: column;
-    gap: 1rem;
-  }
-  
-  .pipeline-flow {
+  .pipeline-steps {
     flex-direction: column;
   }
   
-  .pipeline-arrow {
+  .step-arrow {
     transform: rotate(90deg);
+  }
+  
+  .research-grid {
+    grid-template-columns: 1fr;
   }
 }
 </style>

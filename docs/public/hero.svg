@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4299e1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9f7aea;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="url(#grad1)" opacity="0.1"/>
+  
+  <!-- Microbiome symbols -->
+  <g fill="url(#grad1)">
+    <!-- Bacteria 1 -->
+    <ellipse cx="70" cy="80" rx="15" ry="8" transform="rotate(-30 70 80)"/>
+    <!-- Bacteria 2 -->
+    <ellipse cx="130" cy="70" rx="12" ry="6" transform="rotate(45 130 70)"/>
+    <!-- Bacteria 3 -->
+    <ellipse cx="100" cy="120" rx="18" ry="7" transform="rotate(15 100 120)"/>
+    
+    <!-- DNA helix circles -->
+    <circle cx="60" cy="120" r="5" opacity="0.6"/>
+    <circle cx="140" cy="100" r="4" opacity="0.6"/>
+    <circle cx="80" cy="60" r="4" opacity="0.6"/>
+    <circle cx="120" cy="140" r="5" opacity="0.6"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="100" y="175" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="currentColor" text-anchor="middle" class="text">
+    SkillPI
+  </text>
+</svg>
