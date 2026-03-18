@@ -87,44 +87,32 @@
     tags: ["metagenomics", "profiling", "taxonomic", "python"]
     skill_level: "beginner"
 
-- id: "16s-rrna-concept"
+- id: "16s-rrna-sequencing"
   type: "concept"
   data:
-    name: "16S rRNA 基因"
-    definition: "16S rRNA 基因是原核生物核糖体小亚基的组成部分，长度约 1500bp，包含保守区和可变区，广泛用于微生物分类和系统发育分析"
+    name: "16S rRNA 测序"
+    definition: "16S rRNA 基因是原核生物核糖体小亚基的组成部分，长度约 1500bp，包含 9 个可变区（V1-V9）和保守区，广泛用于微生物分类和系统发育分析"
     explanation: |
-      16S rRNA 基因测序是微生物组研究中最常用的方法之一。其原理是：
-      
-      1. **保守区**: 用于设计通用引物
-      2. **可变区**: V1-V9 九个高变区，包含物种特异性序列
-      3. **系统发育**: 通过序列比对构建进化树
-      
-      常用的可变区包括 V3-V4 和 V4 区。
+      16S rRNA 基因测序是微生物组研究中最常用的方法：
+
+      **原理**：
+      1. 保守区用于设计通用引物（如 27F/1492R）
+      2. 可变区包含物种特异性序列
+      3. 通过序列比对构建系统发育树
+
+      **常用引物**：
+      - V3-V4 区：341F-805R
+      - V4 区：515F-806R（Earth Microbiome Project）
+
+      **分析流程**：
+      质控 → 拼接 → 去噪/OTU 聚类 → 物种注释 → 多样性分析
     related_concepts: ["扩增子测序", "OTU", "ASV", "系统发育树"]
     examples:
-      - "V4 区扩增引物：515F (5'-GTGCCAGCMGCCGCGGTAA-3')"
-      - "V3-V4 区扩增引物：341F-805R"
-    tags: ["16S", "sequencing", "taxonomy", "basics"]
+      - "Illumina MiSeq 2x250bp 测序 V3-V4 区"
+      - "使用 DADA2 进行去噪获得 ASV"
+      - "使用 QIIME 2 进行多样性分析"
+    tags: ["16S", "sequencing", "taxonomy", "amplicon", "basics"]
     skill_level: "beginner"
-
-- id: "assembly-workflow"
-  type: "workflow"
-  data:
-    name: "宏基因组组装工作流"
-    description: "从原始宏基因组测序数据到完整基因组的完整分析流程"
-    steps:
-      - "1. 质量控制：使用 FastQC 和 MultiQC 评估数据质量"
-      - "2. 预处理：使用 Trimmomatic 或 fastp 去除低质量 reads 和 adapter"
-      - "3. 组装：使用 MEGAHIT 或 metaSPAdes 进行 de novo 组装"
-      - "4. 基因预测：使用 Prodigal 预测开放阅读框"
-      - "5. 分箱：使用 MetaBAT2 或 MaxBin2 进行基因组分箱"
-      - "6. 质量评估：使用 CheckM 评估 MAG 质量"
-      - "7. 注释：使用 eggNOG-mapper 或 DRAM 进行功能注释"
-    tools_used: ["FastQC", "Trimmomatic", "MEGAHIT", "Prodigal", "MetaBAT2", "CheckM"]
-    input_format: "Illumina paired-end FASTQ"
-    output_format: "MAGs (Metagenome-Assembled Genomes) in FASTA format"
-    tags: ["metagenomics", "assembly", "binning", "MAG"]
-    skill_level: "advanced"
 
 - id: "alpha-diversity"
   type: "concept"

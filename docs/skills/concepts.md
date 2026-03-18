@@ -1,16 +1,19 @@
-# Concepts
+# 核心概念
 
-本页面包含所有concepts类型的技能。
+微生物组信息学的基础概念和术语。
 
-## 列表
+## 📖 概念列表
 
-| 名称 | 难度 | 标签 | 更新时间 |
-|------|------|------|----------|
-| [16S rRNA 基因](concepts/16s-rrna-concept.md) | beginner | 16S, sequencing, taxonomy | 2026-03-18 |
-| [Alpha 多样性](concepts/alpha-diversity.md) | intermediate | diversity, statistics, ecology | 2026-03-18 |
-| [16S rRNA 基因](concepts/16s-rrna-concept.md) | beginner | 16S, sequencing, taxonomy | 2026-03-18 |
-| [Alpha 多样性](concepts/alpha-diversity.md) | intermediate | diversity, statistics, ecology | 2026-03-18 |
-| [16S rRNA 测序](concepts/16s-rrna-sequencing.md) | beginner | 16S, sequencing, taxonomy | 2026-03-18 |
-| [宏基因组测序](concepts/metagenomics-sequencing.md) | intermediate | metagenomics, shotgun, sequencing | 2026-03-18 |
-| [16S rRNA 基因](concepts/16s-rrna-concept.md) | beginner | 16S, sequencing, taxonomy | 2026-03-18 |
-| [Alpha 多样性](concepts/alpha-diversity.md) | intermediate | diversity, statistics, ecology | 2026-03-18 |
+| 概念 | 难度 | 描述 |
+|------|------|------|
+| [16S rRNA 测序](concepts/16s-rrna-sequencing) | ⭐ 入门 | 基于 16S rRNA 基因的微生物分类分析 |
+| [宏基因组测序](concepts/metagenomics-sequencing) | ⭐⭐ 中级 | 鸟枪法测序分析微生物群落功能 |
+| [Alpha 多样性](concepts/alpha-diversity) | ⭐⭐ 中级 | 样本内微生物多样性指标 |
+
+## 🎯 选择建议
+
+### 初学者
+从 **[16S rRNA 测序](concepts/16s-rrna-sequencing)** 开始，了解微生物组分析基础
+
+### 进阶学习
+学习 **[宏基因组测序](concepts/metagenomics-sequencing)** 进行功能分析

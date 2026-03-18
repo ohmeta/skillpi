@@ -104,5 +104,5 @@ pip install humann
 ## 💡 下一步
 
 - 查看 [工具列表](/skills/tools) 了解所有工具
-- 学习 [核心概念](/skills/concepts) 理解基本原理
+- 学习 [核心概念](/skills/concepts.md) 理解基本原理
 - 探索 [工作流](/skills/workflows) 获取完整分析方案
