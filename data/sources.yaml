@@ -1,0 +1,62 @@
+# 数据源配置
+# 定义要抓取的微生物组信息学工具和数据源
+
+# GitHub 仓库列表
+github_repos:
+  - url: "https://github.com/biocore/qiime2"
+    type: tool
+    category: analysis
+    priority: high
+  - url: "https://github.com/benjjneb/dada2"
+    type: tool
+    category: denoising
+    priority: high
+  - url: "https://github.com/torognes/mothur"
+    type: tool
+    category: analysis
+    priority: medium
+  - url: "https://github.com/biocore/emperor"
+    type: tool
+    category: visualization
+    priority: medium
+  - url: "https://github.com/microbiome/microbiome"
+    type: tool
+    category: statistics
+    priority: medium
+
+# PyPI 包列表
+pypi_packages:
+  - name: "qiime2"
+    type: tool
+    category: analysis
+  - name: "dada2"
+    type: tool
+    category: denoising
+  - name: "scikit-bio"
+    type: tool
+    category: utilities
+  - name: "biom-format"
+    type: tool
+    category: utilities
+
+# bioRxiv 搜索关键词
+biorxiv_searches:
+  - query: "microbiome analysis tool"
+    type: tool
+  - query: "16S rRNA pipeline"
+    type: workflow
+  - query: "metagenomics workflow"
+    type: workflow
+  - query: "microbial community analysis"
+    type: concept
+
+# 手动维护的技能数据
+manual_skills:
+  - id: "quality-control-basics"
+    type: concept
+    data:
+      name: "质量控制基础"
+      definition: "测序数据质量控制的基本概念和方法"
+      explanation: "包括 reads 过滤、adapter 去除、质量评估等步骤"
+      skill_level: beginner
+      tags: ["QC", "sequencing", "basics"]

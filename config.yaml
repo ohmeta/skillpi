@@ -1,0 +1,60 @@
+# SkillPI 配置
+# 用于自定义 pipeline 行为
+
+# 数据源配置
+sources:
+  github:
+    enabled: true
+    rate_limit_wait: true  # 遇到速率限制时等待
+    
+  pypi:
+    enabled: true
+    
+  biorxiv:
+    enabled: false  # 暂未实现
+    search_limit: 10
+
+# 爬虫设置
+scraper:
+  timeout: 30
+  user_agent: "SkillPI Bot/1.0"
+  retry_count: 3
+
+# 技能处理
+skills:
+  # 技能 ID 生成规则
+  id_format: "{name}"  # 可选：{name}, {category}-{name}
+  
+  # 默认技能难度
+  default_level: intermediate
+  
+  # 自动标签
+  auto_tags: true
+
+# 文档生成
+docs:
+  # 输出格式
+  format: mkdocs
+  
+  # 主题配置
+  theme:
+    name: material
+    language: zh
+    
+  # 导航结构
+  nav_structure:
+    - name: 首页
+      path: index.md
+    - name: 技能
+      children:
+        - name: 工具
+          path: skills/tools.md
+        - name: 工作流
+          path: skills/workflows.md
+        - name: 概念
+          path: skills/concepts.md
+
+# 日志设置
+logging:
+  level: INFO
+  file: skillpi.log
