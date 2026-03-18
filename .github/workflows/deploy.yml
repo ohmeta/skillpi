@@ -1,4 +1,4 @@
-# GitHub Actions - 文档部署专用
+# GitHub Actions - VitePress 文档部署
 name: Deploy Docs
 
 on:
@@ -6,10 +6,8 @@ on:
     branches: [main]
     paths:
       - 'docs/**'
-      - 'mkdocs.yml'
-      - 'data/skills/**'
-      - 'scripts/**'
-      - 'src/**'
+      - 'package.json'
+      - 'package-lock.json'
   workflow_dispatch:  # 允许手动触发
 
 # 取消正在运行的旧任务
@@ -31,33 +29,43 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: 'npm'
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
           cache: 'pip'
 
-      - name: Install dependencies
+      - name: Install Python dependencies
         run: |
           pip install -e ".[pipeline]"
-          # 使用稳定的 mkdocs-material 版本
-          pip install mkdocs-material~=9.5.0
 
       - name: Generate skills docs
         run: |
           python scripts/generate_from_example.py
 
+      - name: Install Node dependencies
+        run: |
+          npm ci
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
-      - name: Build with MkDocs
+      - name: Build with VitePress
         run: |
-          mkdocs build --clean --verbose
+          npm run build
+        env:
+          NODE_ENV: production
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./site
+          path: ./docs/.vitepress/dist
 
   deploy:
     runs-on: ubuntu-latest
@@ -65,7 +73,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    
+
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
