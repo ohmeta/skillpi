@@ -284,5 +284,1140 @@
     },
     "created_at": "2026-03-18T13:01:06.427105",
     "updated_at": "2026-03-18T13:01:06.427105"
+  },
+  {
+    "id": "kraken2",
+    "type": "tool",
+    "data": {
+      "name": "Kraken 2",
+      "version": null,
+      "description": "The second version of the Kraken taxonomic sequence classification system ",
+      "category": "taxonomic-classification",
+      "url": "https://github.com/DerrickWood/kraken2",
+      "repo_url": "https://github.com/DerrickWood/kraken2",
+      "homepage": null,
+      "paper_url": "https://doi.org/10.1186/s13059-019-1891-0",
+      "installation": "conda install -c bioconda kraken 2",
+      "usage_example": null,
+      "tags": [
+        "taxonomic-classification",
+        "kmer",
+        "metagenomics",
+        "fast"
+      ],
+      "skill_level": "intermediate",
+      "github_stars": 887,
+      "language": "C++",
+      "last_updated": "2026-03-30T08:43:27.120218+00:00"
+    }
+  },
+  {
+    "id": "bracken",
+    "type": "tool",
+    "data": {
+      "name": "Bracken",
+      "version": null,
+      "description": "Bracken (Bayesian Reestimation of Abundance with KrakEN) is a highly accurate statistical method that computes the abundance of species in DNA sequences from a metagenomics sample. ",
+      "category": "taxonomic-classification",
+      "url": "http://ccb.jhu.edu/software/bracken/index.shtml",
+      "repo_url": "https://github.com/jenniferlu717/Bracken",
+      "homepage": "http://ccb.jhu.edu/software/bracken/index.shtml",
+      "paper_url": "https://doi.org/10.7554/eLife.39915",
+      "installation": "conda install -c bioconda bracken",
+      "usage_example": null,
+      "tags": [
+        "abundance-estimation",
+        "kraken",
+        "bayesian"
+      ],
+      "skill_level": "intermediate",
+      "github_stars": 339,
+      "language": "C++",
+      "last_updated": "2026-03-30T08:43:29.769283+00:00"
+    }
+  },
+  {
+    "id": "centrifuge",
+    "type": "tool",
+    "data": {
+      "name": "Centrifuge",
+      "version": null,
+      "description": "Classifier for metagenomic sequences",
+      "category": "taxonomic-classification",
+      "url": "https://github.com/DaehwanKimLab/centrifuge",
+      "repo_url": "https://github.com/DaehwanKimLab/centrifuge",
+      "homepage": null,
+      "paper_url": "https://doi.org/10.1101/gr.210641.116",
+      "installation": "conda install -c bioconda centrifuge",
+      "usage_example": null,
+      "tags": [
+        "taxonomic-classification",
+        "fm-index",
+        "memory-efficient"
+      ],
+      "skill_level": "intermediate",
+      "github_stars": 271,
+      "language": "C++",
+      "last_updated": "2026-03-30T08:43:32.382952+00:00"
+    }
+  },
+  {
+    "id": "kaiju",
+    "type": "tool",
+    "data": {
+      "name": "Kaiju",
+      "version": null,
+      "description": "Fast taxonomic classification of metagenomic sequencing reads using a protein reference database",
+      "category": "taxonomic-classification",
+      "url": "http://kaiju.binf.ku.dk",
+      "repo_url": "https://github.com/bioinformatics-centre/kaiju",
+      "homepage": "http://kaiju.binf.ku.dk",
+      "paper_url": "https://doi.org/10.1038/ncomms11257",
+      "installation": "conda install -c bioconda kaiju",
+      "usage_example": null,
+      "tags": [
+        "taxonomic-classification",
+        "protein",
+        "sensitive",
+        "metagenomics",
+        "next-generation-sequencing",
+        "bioinformatics",
+        "taxonomy"
+      ],
+      "skill_level": "intermediate",
+      "github_stars": 301,
+      "language": "C",
+      "last_updated": "2026-03-30T08:43:35.172933+00:00"
+    }
+  },
+  {
+    "id": "metaspades",
+    "type": "tool",
+    "data": {
+      "name": "metaSPAdes",
+      "version": null,
+      "description": "专门为宏基因组数据设计的 de novo 组装器，基于 SPAdes 引擎",
+      "category": "assembly",
+      "url": "http://ablab.github.io/spades/",
+      "repo_url": "https://github.com/ablab/spades",
+      "homepage": "http://ablab.github.io/spades/",
+      "paper_url": "https://doi.org/10.1101/gr.213959.116",
+      "installation": "conda install -c bioconda metaspades",
+      "usage_example": null,
+      "tags": [
+        "assembly",
+        "metagenomics",
+        "short-read",
+        "de-bruijn",
+        "genome-assembly",
+        "sequence-assembler",
+        "sequencing",
+        "transcriptome-assembly",
+        "illumina",
+        "metagenome-assembly",
+        "next-generation-sequencing"
+      ],
+      "skill_level": "intermediate",
+      "github_stars": 921,
+      "language": "C++",
+      "last_updated": "2026-03-30T08:43:38.111948+00:00"
+    }
+  },
+  {
+    "id": "flye",
+    "type": "tool",
+    "data": {
+      "name": "Flye",
+      "version": "flye",
+      "description": "De novo assembler for single molecule sequencing reads using repeat graphs",
+      "category": "assembly",
+      "url": "https://github.com/fenderglass/Flye",
+      "repo_url": "https://github.com/fenderglass/Flye",
+      "homepage": null,
+      "paper_url": "https://doi.org/10.1038/s41587-019-0072-8",
+      "installation": "conda install -c bioconda flye",
+      "usage_example": null,
+      "tags": [
+        "assembly",
+        "long-read",
+        "nanopore",
+        "pacbio",
+        "metagenomics"
+      ],
+      "skill_level": "advanced",
+      "github_stars": 910,
+      "language": "C",
+      "last_updated": "2026-03-30T08:43:41.400747+00:00"
+    }
+  },
+  {
+    "id": "canu",
+    "type": "tool",
+    "data": {
+      "name": "Canu",
+      "version": null,
+      "description": "A single molecule sequence assembler for genomes large and small.",
+      "category": "assembly",
+      "url": "http://canu.readthedocs.io/",
+      "repo_url": "https://github.com/marbl/canu",
+      "homepage": "http://canu.readthedocs.io/",
+      "paper_url": "https://doi.org/10.1101/gr.215087.116",
+      "installation": "conda install -c bioconda canu",
+      "usage_example": null,
+      "tags": [
+        "assembly",
+        "long-read",
+        "pacbio",
+        "nanopore"
+      ],
+      "skill_level": "advanced",
+      "github_stars": 699,
+      "language": "C++",
+      "last_updated": "2026-03-30T08:43:44.183065+00:00"
+    }
+  },
+  {
+    "id": "unicycler",
+    "type": "tool",
+    "data": {
+      "name": "Unicycler",
+      "version": null,
+      "description": "hybrid assembly pipeline for bacterial genomes",
+      "category": "assembly",
+      "url": "https://github.com/rrwick/Unicycler",
+      "repo_url": "https://github.com/rrwick/Unicycler",
+      "homepage": null,
+      "paper_url": "https://doi.org/10.1371/journal.pcbi.1005595",
+      "installation": "conda install -c bioconda unicycler",
+      "usage_example": null,
+      "tags": [
+        "assembly",
+        "hybrid",
+        "short-read",
+        "long-read",
+        "bacterial"
+      ],
+      "skill_level": "intermediate",
+      "github_stars": 635,
+      "language": "C++",
+      "last_updated": "2026-03-30T08:43:46.735317+00:00"
+    }
+  },
+  {
+    "id": "metabat2",
+    "type": "tool",
+    "data": {
+      "name": "MetaBAT 2",
+      "version": null,
+      "description": "基于丰度和四核苷酸频率的宏基因组分箱工具，恢复高质量 MAG",
+      "category": "binning",
+      "url": "https://github.com/BinPro/MetaBAT2",
+      "repo_url": "https://github.com/BinPro/MetaBAT2",
+      "homepage": null,
+      "paper_url": "https://doi.org/10.7554/eLife.45092",
+      "installation": "conda install -c bioconda metabat 2",
+      "usage_example": null,
+      "tags": [
+        "binning",
+        "MAG",
+        "metagenomics",
+        "abundance"
+      ],
+      "skill_level": "advanced",
+      "github_stars": 0,
+      "language": "",
+      "last_updated": "2026-03-30T08:43:49.160530+00:00"
+    }
+  },
+  {
+    "id": "maxbin2",
+    "type": "tool",
+    "data": {
+      "name": "MaxBin 2",
+      "version": null,
+      "description": "自动化宏基因组分箱工具，利用序列组成和丰度信息",
+      "category": "binning",
+      "url": "https://github.com/kylebittinger/maxbin2",
+      "repo_url": "https://github.com/kylebittinger/maxbin2",
+      "homepage": null,
+      "paper_url": "https://doi.org/10.1093/bioinformatics/btv638",
+      "installation": "conda install -c bioconda maxbin 2",
+      "usage_example": null,
+      "tags": [
+        "binning",
+        "MAG",
+        "metagenomics",
+        "automated"
+      ],
+      "skill_level": "advanced",
+      "github_stars": 0,
+      "language": "",
+      "last_updated": "2026-03-30T08:43:51.571644+00:00"
+    }
+  },
+  {
+    "id": "concoct",
+    "type": "tool",
+    "data": {
+      "name": "CONCOCT",
+      "version": "develop",
+      "description": "Clustering cONtigs with COverage and ComposiTion",
+      "category": "binning",
+      "url": "https://github.com/BinPro/CONCOCT",
+      "repo_url": "https://github.com/BinPro/CONCOCT",
+      "homepage": null,
+      "paper_url": "https://doi.org/10.1038/nmeth.2835",
+      "installation": "pip install concoct",
+      "usage_example": null,
+      "tags": [
+        "binning",
+        "MAG",
+        "unsupervised",
+        "gaussian-mixture"
+      ],
+      "skill_level": "advanced",
+      "github_stars": 137,
+      "language": "Python",
+      "last_updated": "2026-03-30T08:43:54.313143+00:00"
+    }
+  },
+  {
+    "id": "das_tool",
+    "type": "tool",
+    "data": {
+      "name": "DAS Tool",
+      "version": null,
+      "description": "通过集成多个分箱工具结果来恢复高质量 MAG 的整合框架",
+      "category": "binning-refinement",
+      "url": "https://github.com/cmks/DAS_Tool",
+      "repo_url": "https://github.com/cmks/DAS_Tool",
+      "homepage": null,
+      "paper_url": "https://doi.org/10.1038/s41564-018-0171-1",
+      "installation": "# R\nBiocManager::install('DAS Tool')",
+      "usage_example": null,
+      "tags": [
+        "binning-refinement",
+        "MAG",
+        "ensemble",
+        "quality-improvement"
+      ],
+      "skill_level": "advanced",
+      "github_stars": 169,
+      "language": "R",
+      "last_updated": "2026-03-30T08:43:56.851420+00:00"
+    }
+  },
+  {
+    "id": "checkm2",
+    "type": "tool",
+    "data": {
+      "name": "CheckM2",
+      "version": null,
+      "description": "Assessing the quality of metagenome-derived genome bins using machine learning",
+      "category": "quality-assessment",
+      "url": "https://github.com/chklovski/CheckM2",
+      "repo_url": "https://github.com/chklovski/CheckM2",
+      "homepage": null,
+      "paper_url": "https://doi.org/10.1038/s41592-023-01940-w",
+      "installation": "conda install -c bioconda checkm2",
+      "usage_example": null,
+      "tags": [
+        "quality-assessment",
+        "MAG",
+        "machine-learning",
+        "completeness"
+      ],
+      "skill_level": "intermediate",
+      "github_stars": 252,
+      "language": "Scilab",
+      "last_updated": "2026-03-30T08:43:59.405246+00:00"
+    }
+  },
+  {
+    "id": "gtdb_tk",
+    "type": "tool",
+    "data": {
+      "name": "GTDB-Tk",
+      "version": null,
+      "description": "GTDB-Tk: a toolkit for assigning objective taxonomic classifications to bacterial and archaeal genomes.",
+      "category": "taxonomic-classification",
+      "url": "https://ecogenomics.github.io/GTDBTk/",
+      "repo_url": "https://github.com/Ecogenomics/GTDBTk",
+      "homepage": "https://ecogenomics.github.io/GTDBTk/",
+      "paper_url": "https://doi.org/10.1038/s41587-020-0501-8",
+      "installation": "pip install gtdb-tk",
+      "usage_example": null,
+      "tags": [
+        "taxonomy",
+        "MAG",
+        "GTDB",
+        "classification",
+        "species-assignments",
+        "phylogenetics",
+        "archaea",
+        "bacteria",
+        "nomenclature",
+        "bioinformatics",
+        "metagenomics"
+      ],
+      "skill_level": "intermediate",
+      "github_stars": 587,
+      "language": "Python",
+      "last_updated": "2026-03-30T08:44:02.030090+00:00"
+    }
+  },
+  {
+    "id": "strainphlan",
+    "type": "tool",
+    "data": {
+      "name": "StrainPhlAn",
+      "version": null,
+      "description": "MetaPhlAn is a computational tool for profiling the composition of microbial communities from metagenomic shotgun sequencing data",
+      "category": "strain-analysis",
+      "url": "http://segatalab.cibio.unitn.it/tools/metaphlan/index.html",
+      "repo_url": "https://github.com/biobakery/metaphlan",
+      "homepage": "http://segatalab.cibio.unitn.it/tools/metaphlan/index.html",
+      "paper_url": "https://doi.org/10.1038/nmeth.3589",
+      "installation": "pip install strainphlan",
+      "usage_example": null,
+      "tags": [
+        "strain-level",
+        "phylogenetics",
+        "metagenomics",
+        "biobakery",
+        "public",
+        "tools",
+        "python",
+        "python-tools"
+      ],
+      "skill_level": "advanced",
+      "github_stars": 397,
+      "language": "Python",
+      "last_updated": "2026-03-30T08:44:04.807444+00:00"
+    }
+  },
+  {
+    "id": "instrain",
+    "type": "tool",
+    "data": {
+      "name": "inStrain",
+      "version": null,
+      "description": "基于读段比较分析宏基因组中的群体基因组学，包括 SNV、微多样性、菌株验证",
+      "category": "strain-analysis",
+      "url": "https://github.com/MrOlm/inStrain",
+      "repo_url": "https://github.com/MrOlm/inStrain",
+      "homepage": null,
+      "paper_url": "https://doi.org/10.1186/s13059-020-02179-4",
+      "installation": "pip install instrain",
+      "usage_example": null,
+      "tags": [
+        "strain-level",
+        "SNV",
+        "microdiversity",
+        "population-genomics"
+      ],
+      "skill_level": "advanced",
+      "github_stars": 183,
+      "language": "Python",
+      "last_updated": "2026-03-30T08:44:07.365992+00:00"
+    }
+  },
+  {
+    "id": "eggnog_mapper",
+    "type": "tool",
+    "data": {
+      "name": "eggNOG-mapper",
+      "version": null,
+      "description": "Fast genome-wide functional annotation through orthology assignment",
+      "category": "functional-annotation",
+      "url": "http://eggnog-mapper.embl.de",
+      "repo_url": "https://github.com/eggnogdb/eggnog-mapper",
+      "homepage": "http://eggnog-mapper.embl.de",
+      "paper_url": "https://doi.org/10.1093/molbev/msab293",
+      "installation": "pip install eggnog-mapper",
+      "usage_example": null,
+      "tags": [
+        "functional-annotation",
+        "orthologs",
+        "GO",
+        "KEGG",
+        "annotations",
+        "orthology-assignments",
+        "genomics"
+      ],
+      "skill_level": "intermediate",
+      "github_stars": 715,
+      "language": "Python",
+      "last_updated": "2026-03-30T08:44:09.961994+00:00"
+    }
+  },
+  {
+    "id": "prokka",
+    "type": "tool",
+    "data": {
+      "name": "Prokka",
+      "version": null,
+      "description": ":zap: :aquarius: Rapid prokaryotic genome annotation",
+      "category": "genome-annotation",
+      "url": "https://github.com/tseemann/prokka",
+      "repo_url": "https://github.com/tseemann/prokka",
+      "homepage": null,
+      "paper_url": "https://doi.org/10.1093/bioinformatics/btu153",
+      "installation": "conda install -c bioconda prokka",
+      "usage_example": null,
+      "tags": [
+        "annotation",
+        "prokaryotic",
+        "gene-prediction",
+        "rapid",
+        "genome-annotation",
+        "functional-assignment",
+        "bacterial-genomes",
+        "gene-finding"
+      ],
+      "skill_level": "intermediate",
+      "github_stars": 964,
+      "language": "Perl",
+      "last_updated": "2026-03-30T08:44:12.725404+00:00"
+    }
+  },
+  {
+    "id": "bakta",
+    "type": "tool",
+    "data": {
+      "name": "Bakta",
+      "version": null,
+      "description": "Rapid & standardized annotation of bacterial genomes, MAGs & plasmids",
+      "category": "genome-annotation",
+      "url": "https://github.com/oschwengers/bakta",
+      "repo_url": "https://github.com/oschwengers/bakta",
+      "homepage": null,
+      "paper_url": "https://doi.org/10.1093/microbe/miac074",
+      "installation": "pip install bakta",
+      "usage_example": null,
+      "tags": [
+        "annotation",
+        "prokaryotic",
+        "standardized",
+        "UniRef",
+        "bioinformatics",
+        "microbial-genomics",
+        "genome-annotation",
+        "bacteria",
+        "bacterial-genomes",
+        "plasmids",
+        "metagenome-assembled-genomes",
+        "mag"
+      ],
+      "skill_level": "intermediate",
+      "github_stars": 617,
+      "language": "Python",
+      "last_updated": "2026-03-30T08:44:15.248206+00:00"
+    }
+  },
+  {
+    "id": "antismash",
+    "type": "tool",
+    "data": {
+      "name": "antiSMASH",
+      "version": null,
+      "description": "微生物次级代谢产物生物合成基因簇（BGC）的全面识别和分析工具",
+      "category": "functional-annotation",
+      "url": "https://antismash.secondarymetabolites.org",
+      "repo_url": "https://github.com/antismash/antismash",
+      "homepage": "https://antismash.secondarymetabolites.org",
+      "paper_url": "https://doi.org/10.1093/nar/gkab335",
+      "installation": "pip install antismash",
+      "usage_example": null,
+      "tags": [
+        "BGC",
+        "secondary-metabolites",
+        "natural-products",
+        "genomics"
+      ],
+      "skill_level": "advanced",
+      "github_stars": 248,
+      "language": "Python",
+      "last_updated": "2026-03-30T08:44:17.926520+00:00"
+    }
+  },
+  {
+    "id": "dram",
+    "type": "tool",
+    "data": {
+      "name": "DRAM",
+      "version": null,
+      "description": "Distilled and Refined Annotation of Metabolism: A tool for the annotation and curation of function for microbial and viral genomes",
+      "category": "functional-annotation",
+      "url": "https://dramit.readthedocs.io/en/latest/",
+      "repo_url": "https://github.com/WrightonLabCSU/DRAM",
+      "homepage": "https://dramit.readthedocs.io/en/latest/",
+      "paper_url": "https://doi.org/10.1038/s41587-020-0674-2",
+      "installation": "pip install dram",
+      "usage_example": null,
+      "tags": [
+        "functional-annotation",
+        "metabolism",
+        "MAG",
+        "distillation",
+        "bioinformatics",
+        "genomics",
+        "metagenome-assembled-genomes",
+        "metagenomics",
+        "viral-genomics",
+        "viral-metagenomics",
+        "annotation",
+        "microbiome"
+      ],
+      "skill_level": "advanced",
+      "github_stars": 325,
+      "language": "Python",
+      "last_updated": "2026-03-30T08:44:20.523601+00:00"
+    }
+  },
+  {
+    "id": "bowtie2",
+    "type": "tool",
+    "data": {
+      "name": "Bowtie 2",
+      "version": null,
+      "description": "A fast and sensitive gapped read aligner",
+      "category": "alignment",
+      "url": "https://github.com/BenLangmead/bowtie2",
+      "repo_url": "https://github.com/BenLangmead/bowtie2",
+      "homepage": null,
+      "paper_url": "https://doi.org/10.1038/nmeth.1923",
+      "installation": "conda install -c bioconda bowtie 2",
+      "usage_example": null,
+      "tags": [
+        "alignment",
+        "short-read",
+        "indexing",
+        "fast",
+        "bioinformatics",
+        "read-aligners",
+        "genomics",
+        "c-plus-plus"
+      ],
+      "skill_level": "beginner",
+      "github_stars": 781,
+      "language": "C++",
+      "last_updated": "2026-03-30T08:44:23.077328+00:00"
+    }
+  },
+  {
+    "id": "minimap2",
+    "type": "tool",
+    "data": {
+      "name": "minimap2",
+      "version": null,
+      "description": "A versatile pairwise aligner for genomic and spliced nucleotide sequences",
+      "category": "alignment",
+      "url": "https://lh3.github.io/minimap2",
+      "repo_url": "https://github.com/lh3/minimap2",
+      "homepage": "https://lh3.github.io/minimap2",
+      "paper_url": "https://doi.org/10.1093/bioinformatics/bty191",
+      "installation": "conda install -c bioconda minimap2",
+      "usage_example": null,
+      "tags": [
+        "alignment",
+        "long-read",
+        "versatile",
+        "fast",
+        "bioinformatics",
+        "sequence-alignment",
+        "spliced-alignment",
+        "genomics"
+      ],
+      "skill_level": "beginner",
+      "github_stars": 2146,
+      "language": "C",
+      "last_updated": "2026-03-30T08:44:25.619693+00:00"
+    }
+  },
+  {
+    "id": "bwa_mem2",
+    "type": "tool",
+    "data": {
+      "name": "BWA-MEM2",
+      "version": null,
+      "description": "BWA-MEM 的加速版本，利用 SIMD 指令提升比对速度 2-3 倍",
+      "category": "alignment",
+      "url": "https://github.com/bwa-mem2/bwa-mem2",
+      "repo_url": "https://github.com/bwa-mem2/bwa-mem2",
+      "homepage": null,
+      "paper_url": "https://doi.org/10.1109/IPDPS.2019.00041",
+      "installation": "conda install -c bioconda bwa-mem2",
+      "usage_example": null,
+      "tags": [
+        "alignment",
+        "short-read",
+        "SIMD",
+        "accelerated",
+        "bioinformatics",
+        "genomics",
+        "sequence-alignment"
+      ],
+      "skill_level": "beginner",
+      "github_stars": 825,
+      "language": "C++",
+      "last_updated": "2026-03-30T08:44:28.201329+00:00"
+    }
+  },
+  {
+    "id": "anvio",
+    "type": "tool",
+    "data": {
+      "name": "anvi'o",
+      "version": null,
+      "description": "An analysis and visualization platform for 'omics data",
+      "category": "visualization",
+      "url": "http://merenlab.org/software/anvio",
+      "repo_url": "https://github.com/merenlab/anvio",
+      "homepage": "http://merenlab.org/software/anvio",
+      "paper_url": "https://doi.org/10.1038/s41564-020-00743-5",
+      "installation": "pip install anvi'o",
+      "usage_example": null,
+      "tags": [
+        "visualization",
+        "interactive",
+        "comparative-genomics",
+        "binning",
+        "MAG",
+        "metagenomics",
+        "metatranscriptomics",
+        "pangenomics",
+        "science",
+        "bioinformatics",
+        "phylogenomics",
+        "population-genetics",
+        "python",
+        "javascript",
+        "anvio"
+      ],
+      "skill_level": "advanced",
+      "github_stars": 510,
+      "language": "Python",
+      "last_updated": "2026-03-30T08:44:31.092863+00:00"
+    }
+  },
+  {
+    "id": "pavian",
+    "type": "tool",
+    "data": {
+      "name": "Pavian",
+      "version": null,
+      "description": "交互式宏基因组分类结果可视化工具，支持 Kraken/KrakenUniq/Centrifuge 输出",
+      "category": "visualization",
+      "url": "https://doi.org/10.1093/bioinformatics/btz715",
+      "repo_url": "https://github.com/fbreitwieser/pavian",
+      "homepage": "https://doi.org/10.1093/bioinformatics/btz715",
+      "paper_url": "https://doi.org/10.1093/bioinformatics/btz510",
+      "installation": "# R\nBiocManager::install('Pavian')",
+      "usage_example": null,
+      "tags": [
+        "visualization",
+        "interactive",
+        "classification",
+        "R"
+      ],
+      "skill_level": "beginner",
+      "github_stars": 446,
+      "language": "R",
+      "last_updated": "2026-03-30T08:44:33.681050+00:00"
+    }
+  },
+  {
+    "id": "krona",
+    "type": "tool",
+    "data": {
+      "name": "Krona",
+      "version": null,
+      "description": "Interactively explore metagenomes and more from a web browser.",
+      "category": "visualization",
+      "url": "https://github.com/marbl/Krona/wiki",
+      "repo_url": "https://github.com/marbl/Krona",
+      "homepage": "https://github.com/marbl/Krona/wiki",
+      "paper_url": "https://doi.org/10.1186/1471-2105-12-355",
+      "installation": "conda install -c bioconda krona",
+      "usage_example": null,
+      "tags": [
+        "visualization",
+        "hierarchical",
+        "taxonomy",
+        "interactive"
+      ],
+      "skill_level": "beginner",
+      "github_stars": 498,
+      "language": "JavaScript",
+      "last_updated": "2026-03-30T08:44:36.313226+00:00"
+    }
+  },
+  {
+    "id": "phyloseq",
+    "type": "tool",
+    "data": {
+      "name": "phyloseq",
+      "version": null,
+      "description": "phyloseq is a set of classes, wrappers, and tools (in R) to make it easier to import, store, and analyze phylogenetic sequencing data; and to reproducibly share that data and analysis with others. See the phyloseq front page:",
+      "category": "downstream-analysis",
+      "url": "http://joey711.github.io/phyloseq/",
+      "repo_url": "https://github.com/joey711/phyloseq",
+      "homepage": "http://joey711.github.io/phyloseq/",
+      "paper_url": "https://doi.org/10.1371/journal.pone.0061217",
+      "installation": "# R\nBiocManager::install('phyloseq')",
+      "usage_example": null,
+      "tags": [
+        "R",
+        "diversity",
+        "visualization",
+        "amplicon"
+      ],
+      "skill_level": "intermediate",
+      "github_stars": 643,
+      "language": "R",
+      "last_updated": "2026-03-30T08:44:38.940566+00:00"
+    }
+  },
+  {
+    "id": "deseq2",
+    "type": "tool",
+    "data": {
+      "name": "DESeq2",
+      "version": "devel",
+      "description": "Differential expression of RNA-seq data using the Negative Binomial",
+      "category": "downstream-analysis",
+      "url": "https://bioconductor.org/packages/DESeq2",
+      "repo_url": "https://github.com/mikelove/DESeq2",
+      "homepage": "https://bioconductor.org/packages/DESeq2",
+      "paper_url": "https://doi.org/10.1186/s13059-014-0550-8",
+      "installation": "# R\nBiocManager::install('DESeq2')",
+      "usage_example": null,
+      "tags": [
+        "R",
+        "differential-abundance",
+        "statistical",
+        "negative-binomial"
+      ],
+      "skill_level": "intermediate",
+      "github_stars": 455,
+      "language": "R",
+      "last_updated": "2026-03-30T08:44:41.712021+00:00"
+    }
+  },
+  {
+    "id": "lefse",
+    "type": "tool",
+    "data": {
+      "name": "LEfSe",
+      "version": null,
+      "description": "线性判别分析效应量工具，用于高维生物数据的类间差异分析",
+      "category": "downstream-analysis",
+      "url": "https://github.com/biobakery/LEfSe",
+      "repo_url": "https://github.com/biobakery/LEfSe",
+      "homepage": null,
+      "paper_url": "https://doi.org/10.1186/gb-2011-12-6-r60",
+      "installation": "conda install -c bioconda lefse",
+      "usage_example": null,
+      "tags": [
+        "biomarker",
+        "differential-abundance",
+        "LDA",
+        "biobakery"
+      ],
+      "skill_level": "intermediate",
+      "github_stars": 0,
+      "language": "",
+      "last_updated": "2026-03-30T08:44:43.883135+00:00"
+    }
+  },
+  {
+    "id": "ancom_bc",
+    "type": "tool",
+    "data": {
+      "name": "ANCOM-BC",
+      "version": null,
+      "description": "基于偏差校正的组成数据分析方法，用于微生物组差异丰度分析",
+      "category": "downstream-analysis",
+      "url": "https://github.com/frederick-huang-lin/ANCOMBC",
+      "repo_url": "https://github.com/frederick-huang-lin/ANCOMBC",
+      "homepage": null,
+      "paper_url": "https://doi.org/10.1038/s41467-020-17041-7",
+      "installation": "conda install -c bioconda ancom-bc",
+      "usage_example": null,
+      "tags": [
+        "R",
+        "differential-abundance",
+        "compositionality",
+        "bias-correction"
+      ],
+      "skill_level": "advanced",
+      "github_stars": 0,
+      "language": "",
+      "last_updated": "2026-03-30T08:44:46.051183+00:00"
+    }
+  },
+  {
+    "id": "microeco",
+    "type": "tool",
+    "data": {
+      "name": "microeco",
+      "version": null,
+      "description": "R 包，用于微生物组数据的统计分析和可视化，支持多种数据类型",
+      "category": "downstream-analysis",
+      "url": "https://github.com/ChiLiubio/microeco",
+      "repo_url": "https://github.com/ChiLiubio/microeco",
+      "homepage": null,
+      "paper_url": "https://doi.org/10.1038/s41596-025-01239-4",
+      "installation": "conda install -c bioconda microeco",
+      "usage_example": null,
+      "tags": [
+        "R",
+        "statistics",
+        "visualization",
+        "comprehensive"
+      ],
+      "skill_level": "intermediate",
+      "github_stars": 0,
+      "language": "",
+      "last_updated": "2026-03-30T08:44:48.220162+00:00"
+    }
+  },
+  {
+    "id": "nanoplot",
+    "type": "tool",
+    "data": {
+      "name": "NanoPlot",
+      "version": null,
+      "description": "Oxford Nanopore 测序数据质量控制和可视化工具",
+      "category": "quality-control",
+      "url": "https://github.com/wdecoster/NanoPlot",
+      "repo_url": "https://github.com/wdecoster/NanoPlot",
+      "homepage": null,
+      "paper_url": null,
+      "installation": "conda install -c bioconda nanoplot",
+      "usage_example": null,
+      "tags": [
+        "QC",
+        "nanopore",
+        "long-read",
+        "visualization"
+      ],
+      "skill_level": "beginner",
+      "github_stars": 0,
+      "language": "",
+      "last_updated": "2026-03-30T08:44:50.379342+00:00"
+    }
+  },
+  {
+    "id": "filtlong",
+    "type": "tool",
+    "data": {
+      "name": "Filtlong",
+      "version": null,
+      "description": "长读长序列质量过滤工具，基于质量分数和读长长度",
+      "category": "quality-control",
+      "url": "https://github.com/rrwick/Filtlong",
+      "repo_url": "https://github.com/rrwick/Filtlong",
+      "homepage": null,
+      "paper_url": null,
+      "installation": "conda install -c bioconda filtlong",
+      "usage_example": null,
+      "tags": [
+        "QC",
+        "long-read",
+        "filtering",
+        "nanopore"
+      ],
+      "skill_level": "beginner",
+      "github_stars": 0,
+      "language": "",
+      "last_updated": "2026-03-30T08:44:52.589559+00:00"
+    }
+  },
+  {
+    "id": "clair3",
+    "type": "tool",
+    "data": {
+      "name": "Clair3",
+      "version": null,
+      "description": "长读长（ONT/PacBio）快速准确的 SNP/Indel 变异检测工具",
+      "category": "variant-calling",
+      "url": "https://github.com/HKU-BAL/Clair3",
+      "repo_url": "https://github.com/HKU-BAL/Clair3",
+      "homepage": null,
+      "paper_url": "https://doi.org/10.1038/s41587-021-01138-1",
+      "installation": "conda install -c bioconda clair3",
+      "usage_example": null,
+      "tags": [
+        "variant-calling",
+        "long-read",
+        "SNP",
+        "Indel",
+        "nanopore"
+      ],
+      "skill_level": "advanced",
+      "github_stars": 0,
+      "language": "",
+      "last_updated": "2026-03-30T08:44:54.753648+00:00"
+    }
+  },
+  {
+    "id": "salmon",
+    "type": "tool",
+    "data": {
+      "name": "Salmon",
+      "version": null,
+      "description": "超快速转录本定量工具，支持映射和无比对模式",
+      "category": "quantification",
+      "url": "https://github.com/COMBINE-lab/salmon",
+      "repo_url": "https://github.com/COMBINE-lab/salmon",
+      "homepage": null,
+      "paper_url": "https://doi.org/10.1038/nmeth.4197",
+      "installation": "conda install -c bioconda salmon",
+      "usage_example": null,
+      "tags": [
+        "quantification",
+        "transcriptomics",
+        "metatranscriptomics",
+        "fast"
+      ],
+      "skill_level": "intermediate",
+      "github_stars": 0,
+      "language": "",
+      "last_updated": "2026-03-30T08:44:56.908317+00:00"
+    }
+  },
+  {
+    "id": "featurecounts",
+    "type": "tool",
+    "data": {
+      "name": "featureCounts",
+      "version": null,
+      "description": "高效的读段计数工具，支持基因/外显子/转录本水平的定量",
+      "category": "quantification",
+      "url": "https://github.com/Shi-Lab/featureCounts",
+      "repo_url": "https://github.com/Shi-Lab/featureCounts",
+      "homepage": null,
+      "paper_url": "https://doi.org/10.1093/bioinformatics/btt656",
+      "installation": "conda install -c bioconda featurecounts",
+      "usage_example": null,
+      "tags": [
+        "quantification",
+        "read-counting",
+        "fast",
+        "multithreaded"
+      ],
+      "skill_level": "beginner",
+      "github_stars": 0,
+      "language": "",
+      "last_updated": "2026-03-30T08:44:59.060446+00:00"
+    }
+  },
+  {
+    "id": "nextflow",
+    "type": "tool",
+    "data": {
+      "name": "Nextflow",
+      "version": null,
+      "description": "用于可扩展和可复现计算工作流的框架，支持 Docker/Singularity 容器化",
+      "category": "pipeline-framework",
+      "url": "https://github.com/nextflow-io/nextflow",
+      "repo_url": "https://github.com/nextflow-io/nextflow",
+      "homepage": null,
+      "paper_url": "https://doi.org/10.1038/nbt.3820",
+      "installation": "conda install -c bioconda nextflow",
+      "usage_example": null,
+      "tags": [
+        "workflow",
+        "DSL",
+        "reproducible",
+        "scalable",
+        "containers"
+      ],
+      "skill_level": "advanced",
+      "github_stars": 0,
+      "language": "",
+      "last_updated": "2026-03-30T08:45:01.239106+00:00"
+    }
+  },
+  {
+    "id": "nf_core_mag",
+    "type": "tool",
+    "data": {
+      "name": "nf-core/mag",
+      "version": null,
+      "description": "nf-core 的宏基因组组装和分箱流程，支持短读长/长读长/混合数据",
+      "category": "workflow",
+      "url": "https://github.com/nf-core/mag",
+      "repo_url": "https://github.com/nf-core/mag",
+      "homepage": null,
+      "paper_url": "https://doi.org/10.1038/s41587-020-0439-x",
+      "installation": "conda install -c bioconda nf-core/mag",
+      "usage_example": null,
+      "tags": [
+        "workflow",
+        "assembly",
+        "binning",
+        "nextflow",
+        "nf-core"
+      ],
+      "skill_level": "advanced",
+      "github_stars": 0,
+      "language": "",
+      "last_updated": "2026-03-30T08:45:03.382713+00:00"
+    }
+  },
+  {
+    "id": "virsorter2",
+    "type": "tool",
+    "data": {
+      "name": "VirSorter 2",
+      "version": null,
+      "description": "基于多分类器的病毒序列识别工具，从宏基因组中挖掘病毒序列",
+      "category": "viral-analysis",
+      "url": "https://github.com/jiarong/VirSorter2",
+      "repo_url": "https://github.com/jiarong/VirSorter2",
+      "homepage": null,
+      "paper_url": "https://doi.org/10.1186/s13059-020-02181-w",
+      "installation": "conda install -c bioconda virsorter 2",
+      "usage_example": null,
+      "tags": [
+        "virus",
+        "phage",
+        "identification",
+        "metagenomics"
+      ],
+      "skill_level": "advanced",
+      "github_stars": 0,
+      "language": "",
+      "last_updated": "2026-03-30T08:45:05.559880+00:00"
+    }
+  },
+  {
+    "id": "pharokka",
+    "type": "tool",
+    "data": {
+      "name": "Pharokka",
+      "version": null,
+      "description": "快速噬菌体基因组注释工具，自动检测 tRNA、tmRNA 和基因功能",
+      "category": "viral-analysis",
+      "url": "https://github.com/gbouras13/pharokka",
+      "repo_url": "https://github.com/gbouras13/pharokka",
+      "homepage": null,
+      "paper_url": "https://doi.org/10.1093/nargab/lqad054",
+      "installation": "conda install -c bioconda pharokka",
+      "usage_example": null,
+      "tags": [
+        "phage",
+        "annotation",
+        "fast",
+        "automated"
+      ],
+      "skill_level": "intermediate",
+      "github_stars": 0,
+      "language": "",
+      "last_updated": "2026-03-30T08:45:07.709894+00:00"
+    }
   }
 ]
