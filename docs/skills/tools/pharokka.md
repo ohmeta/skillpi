@@ -44,9 +44,9 @@ conda install -c bioconda pharokka
 
 ### 相关工具
 
-- [VirSorter 2](./virsorter_2)
-- [PHASTER](./phaster)
-- [CheckV](./checkv)
+- [VirSorter 2](./virsorter2)
+- PHASTER
+- CheckV
 
 ### 相关概念
 

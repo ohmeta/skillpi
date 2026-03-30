@@ -46,7 +46,7 @@ R 包，用于微生物组数据的统计分析和可视化，支持多种数据
 
 - [phyloseq](./phyloseq)
 - [ANCOM-BC](./ancom_bc)
-- [vegan](./vegan)
+- vegan
 
 ### 相关概念
 

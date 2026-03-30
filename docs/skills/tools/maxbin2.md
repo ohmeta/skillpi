@@ -44,7 +44,7 @@ conda install -c bioconda maxbin 2
 
 ### 相关工具
 
-- [MetaBAT 2](./metabat_2)
+- [MetaBAT 2](./metabat2)
 - [CONCOCT](./concoct)
 - [DAS Tool](./das_tool)
 

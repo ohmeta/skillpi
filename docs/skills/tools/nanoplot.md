@@ -44,8 +44,8 @@ Oxford Nanopore 测序数据质量控制和可视化工具
 ### 相关工具
 
 - [Filtlong](./filtlong)
-- [Chopper](./chopper)
-- [FastQC](./fastqc)
+- Chopper
+- FastQC
 
 ### 相关概念
 

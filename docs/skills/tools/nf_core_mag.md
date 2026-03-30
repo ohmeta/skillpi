@@ -46,7 +46,7 @@ nf-core 的宏基因组组装和分箱流程，支持短读长/长读长/混合�
 
 - [Nextflow](./nextflow)
 - [MEGAHIT](./megahit)
-- [MetaBAT 2](./metabat_2)
+- [MetaBAT 2](./metabat2)
 
 ---
 

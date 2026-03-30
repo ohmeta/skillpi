@@ -72,8 +72,8 @@ cat checkm2_output/quality_report.tsv
 
 ### 相关工具
 
-- [CheckM](./checkm)
-- [MetaBAT 2](./metabat_2)
+- CheckM
+- [MetaBAT 2](./metabat2)
 - [GTDB-Tk](./gtdb_tk)
 
 ### 相关概念

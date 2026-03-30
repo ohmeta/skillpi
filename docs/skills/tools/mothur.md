@@ -54,6 +54,6 @@ mothur > cluster.split(fasta=current, count=current, splitmethod=classify)
 
 ### 相关工具
 
-- [QIIME 2](./qiime_2)
-- [DADA2](./dada2)
+- [QIIME 2](./qiime2-amplicon)
+- [DADA2](./dada2-pipeline)
 - [phyloseq](./phyloseq)

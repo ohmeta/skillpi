@@ -45,8 +45,8 @@
 
 | 工具 | 用途 | 难度 |
 |------|------|------|
-| [16S rRNA 测序](tools/16s-rrna-sequencing) |  | ⭐ 初级 |
-| [宏基因组测序](tools/metagenomics-sequencing) |  | ⭐⭐ 中级 |
+| [16S rRNA 测序](concepts/16s-rrna-sequencing) |  | ⭐ 初级 |
+| [宏基因组测序](concepts/metagenomics-sequencing) |  | ⭐⭐ 中级 |
 
 ## 🔊 去噪
 
@@ -160,6 +160,6 @@
 
 | 工具 | 用途 | 难度 |
 |------|------|------|
-| [bioBakery Workflow](tools/biobakery-workflow) | Huttenhower 实验室开发的微生物群落分析工具集和教程平台，提供 MetaPhlAn、HUMAnN 等工具的集成 | ⭐⭐ 中级 |
+| [bioBakery Workflow](workflows/biobakery-workflow) | Huttenhower 实验室开发的微生物群落分析工具集和教程平台，提供 MetaPhlAn、HUMAnN 等工具的集成 | ⭐⭐ 中级 |
 | [nf-core/mag](tools/nf_core_mag) | nf-core 的宏基因组组装和分箱流程，支持短读长/长读长/混合数据 | ⭐⭐⭐ 高级 |
 

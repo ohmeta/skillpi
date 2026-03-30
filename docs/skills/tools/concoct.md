@@ -44,8 +44,8 @@ Clustering cONtigs with COverage and ComposiTion
 
 ### 相关工具
 
-- [MetaBAT 2](./metabat_2)
-- [MaxBin 2](./maxbin_2)
+- [MetaBAT 2](./metabat2)
+- [MaxBin 2](./maxbin2)
 - [DAS Tool](./das_tool)
 
 ### 相关概念

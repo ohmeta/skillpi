@@ -87,9 +87,9 @@ fastp -i R1.fq.gz -I R2.fq.gz -o clean_R1.fq.gz -O clean_R2.fq.gz --umi --umi_lo
 
 ### 相关工具
 
-- [Trimmomatic](./trimmomatic)
-- [Cutadapt](./cutadapt)
-- [BBDuk](./bbduk)
+- Trimmomatic
+- Cutadapt
+- BBDuk
 
 ### 相关概念
 

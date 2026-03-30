@@ -73,6 +73,6 @@ strainphlan -s SRS014464.bz2 --output_dir output --nprocs 4 --marker_in_n_marker
 
 ### 相关工具
 
-- [HUMAnN 3](./humann_3)
+- [HUMAnN 3](./humann-3)
 - [StrainPhlAn](./strainphlan)
-- [Kraken 2](./kraken_2)
+- [Kraken 2](./kraken2)

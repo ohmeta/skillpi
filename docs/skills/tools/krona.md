@@ -46,8 +46,8 @@ Interactively explore metagenomes and more from a web browser.
 ### 相关工具
 
 - [Pavian](./pavian)
-- [MetaPhlAn 4](./metaphlan_4)
-- [Kraken 2](./kraken_2)
+- [MetaPhlAn 4](./metaphlan-4)
+- [Kraken 2](./kraken2)
 
 ### 相关概念
 

@@ -113,6 +113,6 @@ taxa <- assignTaxonomy(seqtab.nochim, "silva_nr99_v138.1_train_set.fa.gz")
 
 ### 相关工具
 
-- [QIIME 2](./qiime_2)
-- [DEBLUR](./deblur)
-- [UNOISE3](./unoise3)
+- [QIIME 2](./qiime2-amplicon)
+- DEBLUR
+- UNOISE3

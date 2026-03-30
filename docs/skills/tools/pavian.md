@@ -46,7 +46,7 @@ BiocManager::install('Pavian')
 
 ### 相关工具
 
-- [Kraken 2](./kraken_2)
+- [Kraken 2](./kraken2)
 - [Centrifuge](./centrifuge)
 - [Krona](./krona)
 

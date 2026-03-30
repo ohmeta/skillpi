@@ -44,9 +44,9 @@ Classifier for metagenomic sequences
 
 ### 相关工具
 
-- [Kraken 2](./kraken_2)
+- [Kraken 2](./kraken2)
 - [Kaiju](./kaiju)
-- [MetaPhlAn 4](./metaphlan_4)
+- [MetaPhlAn 4](./metaphlan-4)
 
 ### 相关概念
 

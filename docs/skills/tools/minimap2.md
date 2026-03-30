@@ -45,9 +45,9 @@ A versatile pairwise aligner for genomic and spliced nucleotide sequences
 
 ### 相关工具
 
-- [Bowtie 2](./bowtie_2)
+- [Bowtie 2](./bowtie2)
 - [BWA-MEM2](./bwa_mem2)
-- [NGMLR](./ngmlr)
+- NGMLR
 
 ### 相关概念
 

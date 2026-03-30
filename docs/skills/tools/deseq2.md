@@ -47,8 +47,8 @@ Differential expression of RNA-seq data using the Negative Binomial
 ### 相关工具
 
 - [ANCOM-BC](./ancom_bc)
-- [ALDEx2](./aldex2)
-- [edgeR](./edger)
+- ALDEx2
+- edgeR
 
 ### 相关概念
 

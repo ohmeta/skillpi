@@ -102,6 +102,6 @@ qiime feature-classifier classify-sklearn \
 
 ### 相关工具
 
-- [DADA2](./dada2)
+- [DADA2](./dada2-pipeline)
 - [mothur](./mothur)
 - [phyloseq](./phyloseq)

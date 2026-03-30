@@ -44,7 +44,7 @@ conda install -c bioconda ancom-bc
 
 ### 相关工具
 
-- [ALDEx2](./aldex2)
+- ALDEx2
 - [DESeq2](./deseq2)
 - [LEfSe](./lefse)
 

@@ -44,9 +44,9 @@ conda install -c bioconda clair3
 
 ### 相关工具
 
-- [DeepVariant](./deepvariant)
-- [Medaka](./medaka)
-- [PEPPER-Margin-DeepVariant](./pepper_margin_deepvariant)
+- DeepVariant
+- Medaka
+- PEPPER-Margin-DeepVariant
 
 ### 相关概念
 

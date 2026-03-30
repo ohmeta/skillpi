@@ -44,9 +44,9 @@ conda install -c bioconda nextflow
 
 ### 相关工具
 
-- [Snakemake](./snakemake)
-- [nf-core/mag](./nf_core/mag)
-- [WDL](./wdl)
+- Snakemake
+- [nf-core/mag](./nf_core_mag)
+- WDL
 
 ### 相关概念
 

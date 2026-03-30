@@ -45,9 +45,9 @@ Fast taxonomic classification of metagenomic sequencing reads using a protein re
 
 ### 相关工具
 
-- [Kraken 2](./kraken_2)
+- [Kraken 2](./kraken2)
 - [Centrifuge](./centrifuge)
-- [MetaPhlAn 4](./metaphlan_4)
+- [MetaPhlAn 4](./metaphlan-4)
 
 ### 相关概念
 

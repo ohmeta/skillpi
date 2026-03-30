@@ -45,8 +45,8 @@ Bracken (Bayesian Reestimation of Abundance with KrakEN) is a highly accurate st
 
 ### 相关工具
 
-- [Kraken 2](./kraken_2)
-- [MetaPhlAn 4](./metaphlan_4)
+- [Kraken 2](./kraken2)
+- [MetaPhlAn 4](./metaphlan-4)
 
 ### 相关概念
 

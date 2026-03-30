@@ -44,9 +44,9 @@ conda install -c bioconda featurecounts
 
 ### 相关工具
 
-- [HTSeq](./htseq)
+- HTSeq
 - [Salmon](./salmon)
-- [Kallisto](./kallisto)
+- Kallisto
 
 ### 相关概念
 

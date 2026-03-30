@@ -46,7 +46,7 @@ A fast and sensitive gapped read aligner
 
 - [BWA-MEM2](./bwa_mem2)
 - [minimap2](./minimap2)
-- [HISAT2](./hisat2)
+- HISAT2
 
 ### 相关概念
 

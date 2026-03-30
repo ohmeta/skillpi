@@ -45,8 +45,8 @@ BiocManager::install('DAS Tool')
 
 ### 相关工具
 
-- [MetaBAT 2](./metabat_2)
-- [MaxBin 2](./maxbin_2)
+- [MetaBAT 2](./metabat2)
+- [MaxBin 2](./maxbin2)
 - [CONCOCT](./concoct)
 - [CheckM2](./checkm2)
 

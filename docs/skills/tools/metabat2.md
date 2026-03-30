@@ -78,7 +78,7 @@ metabat2 -i assembly.fa -a depth.txt -o bins/bin
 
 ### 相关工具
 
-- [MaxBin 2](./maxbin_2)
+- [MaxBin 2](./maxbin2)
 - [CONCOCT](./concoct)
 - [DAS Tool](./das_tool)
 - [CheckM2](./checkm2)

@@ -45,7 +45,7 @@ MetaPhlAn is a computational tool for profiling the composition of microbial com
 
 ### 相关工具
 
-- [MetaPhlAn 4](./metaphlan_4)
+- [MetaPhlAn 4](./metaphlan-4)
 - [inStrain](./instrain)
 
 ### 相关概念

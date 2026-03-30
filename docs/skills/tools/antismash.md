@@ -45,8 +45,8 @@ pip install antismash
 
 ### 相关工具
 
-- [PRISM](./prism)
-- [BiG-SCAPE](./big_scape)
+- PRISM
+- BiG-SCAPE
 - [Prokka](./prokka)
 
 ### 相关概念

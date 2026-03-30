@@ -44,7 +44,7 @@ conda install -c bioconda filtlong
 
 - [NanoPlot](./nanoplot)
 - [fastp](./fastp)
-- [Chopper](./chopper)
+- Chopper
 
 ### 相关概念
 

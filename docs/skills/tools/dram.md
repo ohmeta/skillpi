@@ -1,6 +1,6 @@
 ---
 title: DRAM
-description: Distilled and Refined Annotation of Metabolism: A tool for the annotation and curation of function for microbial and viral genomes
+description: "Distilled and Refined Annotation of Metabolism: A tool for the annotation and curation of function for microbial and viral genomes"
 ---
 
 # DRAM

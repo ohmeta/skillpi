@@ -1,6 +1,6 @@
 ---
 title: GTDB-Tk
-description: GTDB-Tk: a toolkit for assigning objective taxonomic classifications to bacterial and archaeal genomes.
+description: "GTDB-Tk: a toolkit for assigning objective taxonomic classifications to bacterial and archaeal genomes."
 ---
 
 # GTDB-Tk
@@ -46,7 +46,7 @@ GTDB-Tk: a toolkit for assigning objective taxonomic classifications to bacteria
 ### 相关工具
 
 - [CheckM2](./checkm2)
-- [MetaBAT 2](./metabat_2)
+- [MetaBAT 2](./metabat2)
 - [anvi'o](./anvio)
 
 ### 相关概念

@@ -44,8 +44,8 @@ conda install -c bioconda salmon
 
 ### 相关工具
 
-- [Kallisto](./kallisto)
-- [STAR](./star)
+- Kallisto
+- STAR
 - [featureCounts](./featurecounts)
 
 ### 相关概念

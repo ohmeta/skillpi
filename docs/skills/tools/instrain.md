@@ -45,7 +45,7 @@ pip install instrain
 ### 相关工具
 
 - [StrainPhlAn](./strainphlan)
-- [MetaPhlAn 4](./metaphlan_4)
+- [MetaPhlAn 4](./metaphlan-4)
 
 ### 相关概念
 

@@ -1,6 +1,6 @@
 ---
 title: Prokka
-description: :zap: :aquarius: Rapid prokaryotic genome annotation
+description: ":zap: :aquarius: Rapid prokaryotic genome annotation"
 ---
 
 # Prokka

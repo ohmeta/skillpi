@@ -74,7 +74,7 @@ bracken -d /path/to/kraken2_db -i result.report -o result.bracken -r 150 -l S
 ### 相关工具
 
 - [Bracken](./bracken)
-- [MetaPhlAn 4](./metaphlan_4)
+- [MetaPhlAn 4](./metaphlan-4)
 - [Centrifuge](./centrifuge)
 
 ### 相关概念

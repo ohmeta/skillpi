@@ -44,7 +44,7 @@ BWA-MEM 的加速版本，利用 SIMD 指令提升比对速度 2-3 倍
 
 ### 相关工具
 
-- [Bowtie 2](./bowtie_2)
+- [Bowtie 2](./bowtie2)
 - [minimap2](./minimap2)
 
 ### 相关概念

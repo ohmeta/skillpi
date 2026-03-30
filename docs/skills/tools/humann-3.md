@@ -50,6 +50,6 @@ humann_renorm_table --input sample_genefamilies.tsv \
 
 ### 相关工具
 
-- [MetaPhlAn 4](./metaphlan_4)
+- [MetaPhlAn 4](./metaphlan-4)
 - [StrainPhlAn](./strainphlan)
 - [LEfSe](./lefse)
