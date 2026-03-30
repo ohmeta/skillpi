@@ -36,6 +36,22 @@ Classifier for metagenomic sequences
 
 > 📝 更多使用示例请参考官方文档。
 
+## 参考资源
+
+- 📖 **官方文档**: [https://github.com/DaehwanKimLab/centrifuge](https://github.com/DaehwanKimLab/centrifuge)
+- 🎓 **教程**: [https://ccb.jhu.edu/software/centrifuge/manual.shtml](https://ccb.jhu.edu/software/centrifuge/manual.shtml)
+- 📄 **论文**: Kim et al. (2016) Centrifuge: rapid and sensitive classification of metagenomic sequences. *Genome Research*. DOI: [10.1101/gr.210641.116](https://doi.org/10.1101/gr.210641.116)
+
+### 相关工具
+
+- [Kraken 2](./kraken_2)
+- [Kaiju](./kaiju)
+- [MetaPhlAn 4](./metaphlan_4)
+
+### 相关概念
+
+- [Functional Vs Taxonomic](../concepts/functional-vs-taxonomic)
+
 ---
 
 *最后更新: 2026-03-30*

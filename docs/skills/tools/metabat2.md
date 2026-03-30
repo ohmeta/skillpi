@@ -70,6 +70,23 @@ metabat2 -i assembly.fa -a depth.txt -o bins/bin
 
 > 📝 更多详细参数请参考官方文档。
 
+## 参考资源
+
+- 📖 **官方文档**: [https://github.com/BinPro/MetaBAT2/wiki](https://github.com/BinPro/MetaBAT2/wiki)
+- 🎓 **教程**: [https://bitbucket.org/berkeleylab/metabat/src/master/](https://bitbucket.org/berkeleylab/metabat/src/master/)
+- 📄 **论文**: Kang et al. (2019) MetaBAT 2: an adaptive binning algorithm for robust and efficient genome reconstruction from metagenome assemblies. *PeerJ*. DOI: [10.7717/peerj.7359](https://doi.org/10.7717/peerj.7359)
+
+### 相关工具
+
+- [MaxBin 2](./maxbin_2)
+- [CONCOCT](./concoct)
+- [DAS Tool](./das_tool)
+- [CheckM2](./checkm2)
+
+### 相关概念
+
+- [Metagenome Assembled Genomes](../concepts/metagenome-assembled-genomes)
+
 ---
 
 *最后更新: 2026-03-30*

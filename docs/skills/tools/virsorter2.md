@@ -36,6 +36,22 @@ conda install -c bioconda virsorter 2
 
 > 📝 更多使用示例请参考官方文档。
 
+## 参考资源
+
+- 📖 **官方文档**: [https://github.com/jiarong/VirSorter2](https://github.com/jiarong/VirSorter2)
+- 🎓 **教程**: [https://github.com/jiarong/VirSorter2/wiki](https://github.com/jiarong/VirSorter2/wiki)
+- 📄 **论文**: Guo et al. (2021) VirSorter2: a multi-classifier, expert-guided approach to detect diverse DNA and RNA viruses. *Microbiome*. DOI: [10.1186/s40168-020-00990-y](https://doi.org/10.1186/s40168-020-00990-y)
+
+### 相关工具
+
+- [PHASTER](./phaster)
+- [Pharokka](./pharokka)
+- [CheckV](./checkv)
+
+### 相关概念
+
+- [Genome Resolved Metagenomics](../concepts/genome-resolved-metagenomics)
+
 ---
 
 *最后更新: 2026-03-30*

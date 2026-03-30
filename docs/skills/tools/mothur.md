@@ -45,3 +45,15 @@ mothur > cluster.split(fasta=current, count=current, splitmethod=classify)
 ## 标签
 
 `16S` `amplicon` `OTU` `diversity` `SOP`
+
+## 参考资源
+
+- 📖 **官方文档**: [https://mothur.org/wiki/](https://mothur.org/wiki/)
+- 🎓 **教程**: [https://mothur.org/wiki/miseq_sop/](https://mothur.org/wiki/miseq_sop/)
+- 📄 **论文**: Schloss et al. (2009) Introducing mothur: Open-Source, Platform-Independent, Community-Supported Software for Describing and Comparing Microbial Communities. *Applied and Environmental Microbiology*. DOI: [10.1128/AEM.01541-09](https://doi.org/10.1128/AEM.01541-09)
+
+### 相关工具
+
+- [QIIME 2](./qiime_2)
+- [DADA2](./dada2)
+- [phyloseq](./phyloseq)

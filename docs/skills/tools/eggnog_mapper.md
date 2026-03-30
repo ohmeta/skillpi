@@ -37,6 +37,22 @@ Fast genome-wide functional annotation through orthology assignment
 
 > 📝 更多使用示例请参考官方文档。
 
+## 参考资源
+
+- 📖 **官方文档**: [https://github.com/eggnogdb/eggnog-mapper/wiki](https://github.com/eggnogdb/eggnog-mapper/wiki)
+- 🎓 **教程**: [https://github.com/eggnogdb/eggnog-mapper/wiki](https://github.com/eggnogdb/eggnog-mapper/wiki)
+- 📄 **论文**: Cantalapiedra et al. (2021) eggNOG-mapper v2: functional annotation of genomes using eggNOG orthologs. *Molecular Biology and Evolution*. DOI: [10.1093/molbev/msab293](https://doi.org/10.1093/molbev/msab293)
+
+### 相关工具
+
+- [Prokka](./prokka)
+- [Bakta](./bakta)
+- [DRAM](./dram)
+
+### 相关概念
+
+- [Functional Vs Taxonomic](../concepts/functional-vs-taxonomic)
+
 ---
 
 *最后更新: 2026-03-30*

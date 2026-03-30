@@ -37,6 +37,22 @@ pip install antismash
 
 > 📝 更多使用示例请参考官方文档。
 
+## 参考资源
+
+- 📖 **官方文档**: [https://docs.antismash.secondarymetabolites.org/](https://docs.antismash.secondarymetabolites.org/)
+- 🎓 **教程**: [https://docs.antismash.secondarymetabolites.org/getting_started/](https://docs.antismash.secondarymetabolites.org/getting_started/)
+- 📄 **论文**: Blin et al. (2021) antiSMASH 6.0: improving cluster detection and comparison capabilities. *Nucleic Acids Research*. DOI: [10.1093/nar/gkab335](https://doi.org/10.1093/nar/gkab335)
+
+### 相关工具
+
+- [PRISM](./prism)
+- [BiG-SCAPE](./big_scape)
+- [Prokka](./prokka)
+
+### 相关概念
+
+- [Functional Vs Taxonomic](../concepts/functional-vs-taxonomic)
+
 ---
 
 *最后更新: 2026-03-30*

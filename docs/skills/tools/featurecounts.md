@@ -36,6 +36,22 @@ conda install -c bioconda featurecounts
 
 > 📝 更多使用示例请参考官方文档。
 
+## 参考资源
+
+- 📖 **官方文档**: [https://subread.sourceforge.net/featureCounts.html](https://subread.sourceforge.net/featureCounts.html)
+- 🎓 **教程**: [https://subread.sourceforge.net/SubreadUsersGuide.pdf](https://subread.sourceforge.net/SubreadUsersGuide.pdf)
+- 📄 **论文**: Liao et al. (2014) featureCounts: an efficient general purpose program for assigning sequence reads to genomic features. *Bioinformatics*. DOI: [10.1093/bioinformatics/btt656](https://doi.org/10.1093/bioinformatics/btt656)
+
+### 相关工具
+
+- [HTSeq](./htseq)
+- [Salmon](./salmon)
+- [Kallisto](./kallisto)
+
+### 相关概念
+
+- [Metatranscriptomics](../concepts/metatranscriptomics)
+
 ---
 
 *最后更新: 2026-03-30*

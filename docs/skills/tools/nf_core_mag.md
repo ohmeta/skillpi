@@ -36,6 +36,18 @@ nf-core 的宏基因组组装和分箱流程，支持短读长/长读长/混合�
 
 > 📝 更多使用示例请参考官方文档。
 
+## 参考资源
+
+- 📖 **官方文档**: [https://nf-co.re/mag](https://nf-co.re/mag)
+- 🎓 **教程**: [https://nf-co.re/mag/usage](https://nf-co.re/mag/usage)
+- 📄 **论文**: Ewels et al. (2020) nf-core: Community curated bioinformatics pipelines. *Nature Biotechnology*. DOI: [10.1038/s41587-020-0439-x](https://doi.org/10.1038/s41587-020-0439-x)
+
+### 相关工具
+
+- [Nextflow](./nextflow)
+- [MEGAHIT](./megahit)
+- [MetaBAT 2](./metabat_2)
+
 ---
 
 *最后更新: 2026-03-30*

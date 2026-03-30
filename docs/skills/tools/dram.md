@@ -37,6 +37,22 @@ Distilled and Refined Annotation of Metabolism: A tool for the annotation and cu
 
 > 📝 更多使用示例请参考官方文档。
 
+## 参考资源
+
+- 📖 **官方文档**: [https://github.com/WrightonLabCSU/DRAM](https://github.com/WrightonLabCSU/DRAM)
+- 🎓 **教程**: [https://github.com/WrightonLabCSU/DRAM/wiki](https://github.com/WrightonLabCSU/DRAM/wiki)
+- 📄 **论文**: Shaffer et al. (2020) DRAM for distilling microbial metabolism to automate the curation of microbiome function. *Nucleic Acids Research*. DOI: [10.1093/nar/gkaa621](https://doi.org/10.1093/nar/gkaa621)
+
+### 相关工具
+
+- [eggNOG-mapper](./eggnog_mapper)
+- [Prokka](./prokka)
+- [Bakta](./bakta)
+
+### 相关概念
+
+- [Functional Vs Taxonomic](../concepts/functional-vs-taxonomic)
+
 ---
 
 *最后更新: 2026-03-30*

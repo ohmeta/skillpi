@@ -64,6 +64,22 @@ cat checkm2_output/quality_report.tsv
 
 > 📝 更多详细参数请参考官方文档。
 
+## 参考资源
+
+- 📖 **官方文档**: [https://github.com/chklovski/CheckM2](https://github.com/chklovski/CheckM2)
+- 🎓 **教程**: [https://github.com/chklovski/CheckM2/wiki](https://github.com/chklovski/CheckM2/wiki)
+- 📄 **论文**: Chklovski et al. (2023) CheckM2: a rapid, scalable and accurate tool for assessing microbial genome quality using machine learning. *Nature Methods*. DOI: [10.1038/s41592-023-01940-w](https://doi.org/10.1038/s41592-023-01940-w)
+
+### 相关工具
+
+- [CheckM](./checkm)
+- [MetaBAT 2](./metabat_2)
+- [GTDB-Tk](./gtdb_tk)
+
+### 相关概念
+
+- [Metagenome Assembled Genomes](../concepts/metagenome-assembled-genomes)
+
 ---
 
 *最后更新: 2026-03-30*

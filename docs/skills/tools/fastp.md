@@ -78,3 +78,19 @@ fastp -i R1.fq.gz -I R2.fq.gz -o clean_R1.fq.gz -O clean_R2.fq.gz --umi --umi_lo
 | `--html` | HTML 报告 | 无 |
 | `--json` | JSON 报告 | 无 |
 | `--thread` | 线程数 | 2 |
+
+## 参考资源
+
+- 📖 **官方文档**: [https://github.com/OpenGene/fastp](https://github.com/OpenGene/fastp)
+- 🎓 **教程**: [https://github.com/OpenGene/fastp#all-options](https://github.com/OpenGene/fastp#all-options)
+- 📄 **论文**: Chen et al. (2018) fastp: an ultra-fast all-in-one FASTQ preprocessor. *Bioinformatics*. DOI: [10.1093/bioinformatics/bty560](https://doi.org/10.1093/bioinformatics/bty560)
+
+### 相关工具
+
+- [Trimmomatic](./trimmomatic)
+- [Cutadapt](./cutadapt)
+- [BBDuk](./bbduk)
+
+### 相关概念
+
+- [Quality Control](../concepts/quality-control)

@@ -104,3 +104,15 @@ taxa <- assignTaxonomy(seqtab.nochim, "silva_nr99_v138.1_train_set.fa.gz")
 | `makeSequenceTable()` | 构建 ASV 表 |
 | `removeBimeraDenovo()` | 去嵌合体 |
 | `assignTaxonomy()` | 分类注释 |
+
+## 参考资源
+
+- 📖 **官方文档**: [https://benjjneb.github.io/dada2/](https://benjjneb.github.io/dada2/)
+- 🎓 **教程**: [https://benjjneb.github.io/dada2/tutorial.html](https://benjjneb.github.io/dada2/tutorial.html)
+- 📄 **论文**: Callahan et al. (2016) DADA2: High-resolution sample inference from Illumina amplicon data. *Nature Methods*. DOI: [10.1038/nmeth.3869](https://doi.org/10.1038/nmeth.3869)
+
+### 相关工具
+
+- [QIIME 2](./qiime_2)
+- [DEBLUR](./deblur)
+- [UNOISE3](./unoise3)

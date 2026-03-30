@@ -37,6 +37,22 @@ A versatile pairwise aligner for genomic and spliced nucleotide sequences
 
 > 📝 更多使用示例请参考官方文档。
 
+## 参考资源
+
+- 📖 **官方文档**: [https://github.com/lh3/minimap2](https://github.com/lh3/minimap2)
+- 🎓 **教程**: [https://github.com/lh3/minimap2#usage](https://github.com/lh3/minimap2#usage)
+- 📄 **论文**: Li (2018) Minimap2: pairwise alignment for nucleotide sequences. *Bioinformatics*. DOI: [10.1093/bioinformatics/bty191](https://doi.org/10.1093/bioinformatics/bty191)
+
+### 相关工具
+
+- [Bowtie 2](./bowtie_2)
+- [BWA-MEM2](./bwa_mem2)
+- [NGMLR](./ngmlr)
+
+### 相关概念
+
+- [Quality Control](../concepts/quality-control)
+
 ---
 
 *最后更新: 2026-03-30*

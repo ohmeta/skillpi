@@ -78,6 +78,22 @@ anvi-refine -p MERGED/PROFILE.db -c CONTIGS.db -C CONCOCT -b Bin_1
 
 > 📝 更多详细参数请参考官方文档。
 
+## 参考资源
+
+- 📖 **官方文档**: [https://anvio.org/](https://anvio.org/)
+- 🎓 **教程**: [https://merenlab.org/2016/06/22/anvio-tutorial-v2/](https://merenlab.org/2016/06/22/anvio-tutorial-v2/)
+- 📄 **论文**: Eren et al. (2021) Community-led, integrated, reproducible multi-omics with anvi'o. *Nature Microbiology*. DOI: [10.1038/s41564-020-00743-5](https://doi.org/10.1038/s41564-020-00743-5)
+
+### 相关工具
+
+- [CheckM2](./checkm2)
+- [GTDB-Tk](./gtdb_tk)
+- [Prokka](./prokka)
+
+### 相关概念
+
+- [Functional Vs Taxonomic](../concepts/functional-vs-taxonomic)
+
 ---
 
 *最后更新: 2026-03-30*

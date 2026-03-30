@@ -37,6 +37,21 @@ Bracken (Bayesian Reestimation of Abundance with KrakEN) is a highly accurate st
 
 > 📝 更多使用示例请参考官方文档。
 
+## 参考资源
+
+- 📖 **官方文档**: [https://github.com/jenniferlu717/Bracken](https://github.com/jenniferlu717/Bracken)
+- 🎓 **教程**: [https://ccb.jhu.edu/software/bracken/index.shtml?t=manual](https://ccb.jhu.edu/software/bracken/index.shtml?t=manual)
+- 📄 **论文**: Lu et al. (2017) Bracken: estimating species abundance in metagenomics data. *PeerJ Computer Science*. DOI: [10.7717/peerj-cs.104](https://doi.org/10.7717/peerj-cs.104)
+
+### 相关工具
+
+- [Kraken 2](./kraken_2)
+- [MetaPhlAn 4](./metaphlan_4)
+
+### 相关概念
+
+- [Functional Vs Taxonomic](../concepts/functional-vs-taxonomic)
+
 ---
 
 *最后更新: 2026-03-30*

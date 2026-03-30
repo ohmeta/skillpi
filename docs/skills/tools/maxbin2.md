@@ -36,6 +36,22 @@ conda install -c bioconda maxbin 2
 
 > 📝 更多使用示例请参考官方文档。
 
+## 参考资源
+
+- 📖 **官方文档**: [https://github.com/kylebittinger/maxbin2](https://github.com/kylebittinger/maxbin2)
+- 🎓 **教程**: [https://sourceforge.net/projects/maxbin2/files/](https://sourceforge.net/projects/maxbin2/files/)
+- 📄 **论文**: Wu et al. (2015) MaxBin 2.0: an automated binning algorithm to recover genomes from multiple metagenomic datasets. *Bioinformatics*. DOI: [10.1093/bioinformatics/btv638](https://doi.org/10.1093/bioinformatics/btv638)
+
+### 相关工具
+
+- [MetaBAT 2](./metabat_2)
+- [CONCOCT](./concoct)
+- [DAS Tool](./das_tool)
+
+### 相关概念
+
+- [Metagenome Assembled Genomes](../concepts/metagenome-assembled-genomes)
+
 ---
 
 *最后更新: 2026-03-30*

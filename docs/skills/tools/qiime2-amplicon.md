@@ -93,3 +93,15 @@ qiime feature-classifier classify-sklearn \
 | `qiime feature-classifier classify-sklearn` | 分类注释 |
 | `qiime taxa barplot` | 分类柱状图 |
 | `qiime emperor plot` | PCoA 3D 可视化 |
+
+## 参考资源
+
+- 📖 **官方文档**: [https://docs.qiime2.org/](https://docs.qiime2.org/)
+- 🎓 **教程**: [https://docs.qiime2.org/2024.5/tutorials/overview/](https://docs.qiime2.org/2024.5/tutorials/overview/)
+- 📄 **论文**: Bolyen et al. (2019) Reproducible, interactive, scalable and extensible microbiome data science using QIIME 2. *Nature Biotechnology*. DOI: [10.1038/s41587-019-0209-9](https://doi.org/10.1038/s41587-019-0209-9)
+
+### 相关工具
+
+- [DADA2](./dada2)
+- [mothur](./mothur)
+- [phyloseq](./phyloseq)

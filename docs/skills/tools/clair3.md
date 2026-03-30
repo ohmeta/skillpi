@@ -36,6 +36,22 @@ conda install -c bioconda clair3
 
 > 📝 更多使用示例请参考官方文档。
 
+## 参考资源
+
+- 📖 **官方文档**: [https://github.com/HKU-BAL/Clair3](https://github.com/HKU-BAL/Clair3)
+- 🎓 **教程**: [https://github.com/HKU-BAL/Clair3#quick-demo](https://github.com/HKU-BAL/Clair3#quick-demo)
+- 📄 **论文**: Zheng et al. (2022) Symphonizing pileup and full-alignment for deep and polymorphic nanopore variant calling. *Nature Methods*. DOI: [10.1038/s41587-021-01138-1](https://doi.org/10.1038/s41587-021-01138-1)
+
+### 相关工具
+
+- [DeepVariant](./deepvariant)
+- [Medaka](./medaka)
+- [PEPPER-Margin-DeepVariant](./pepper_margin_deepvariant)
+
+### 相关概念
+
+- [Genome Resolved Metagenomics](../concepts/genome-resolved-metagenomics)
+
 ---
 
 *最后更新: 2026-03-30*

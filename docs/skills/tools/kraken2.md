@@ -65,6 +65,22 @@ bracken -d /path/to/kraken2_db -i result.report -o result.bracken -r 150 -l S
 
 > 📝 更多详细参数请参考官方文档。
 
+## 参考资源
+
+- 📖 **官方文档**: [https://github.com/DerrickWood/kraken2/wiki](https://github.com/DerrickWood/kraken2/wiki)
+- 🎓 **教程**: [https://github.com/DerrickWood/kraken2/wiki/Manual](https://github.com/DerrickWood/kraken2/wiki/Manual)
+- 📄 **论文**: Wood et al. (2019) Improved metagenomic analysis with Kraken 2. *Genome Biology*. DOI: [10.1186/s13059-019-1891-0](https://doi.org/10.1186/s13059-019-1891-0)
+
+### 相关工具
+
+- [Bracken](./bracken)
+- [MetaPhlAn 4](./metaphlan_4)
+- [Centrifuge](./centrifuge)
+
+### 相关概念
+
+- [Functional Vs Taxonomic](../concepts/functional-vs-taxonomic)
+
 ---
 
 *最后更新: 2026-03-30*

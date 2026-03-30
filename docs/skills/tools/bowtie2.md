@@ -36,6 +36,22 @@ A fast and sensitive gapped read aligner
 
 > 📝 更多使用示例请参考官方文档。
 
+## 参考资源
+
+- 📖 **官方文档**: [http://bowtie-bio.sourceforge.net/bowtie2/manual.shtml](http://bowtie-bio.sourceforge.net/bowtie2/manual.shtml)
+- 🎓 **教程**: [http://bowtie-bio.sourceforge.net/bowtie2/index.shtml](http://bowtie-bio.sourceforge.net/bowtie2/index.shtml)
+- 📄 **论文**: Langmead & Salzberg (2012) Fast gapped-read alignment with Bowtie 2. *Nature Methods*. DOI: [10.1038/nmeth.1923](https://doi.org/10.1038/nmeth.1923)
+
+### 相关工具
+
+- [BWA-MEM2](./bwa_mem2)
+- [minimap2](./minimap2)
+- [HISAT2](./hisat2)
+
+### 相关概念
+
+- [Quality Control](../concepts/quality-control)
+
 ---
 
 *最后更新: 2026-03-30*

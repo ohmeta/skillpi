@@ -36,6 +36,22 @@ conda install -c bioconda ancom-bc
 
 > 📝 更多使用示例请参考官方文档。
 
+## 参考资源
+
+- 📖 **官方文档**: [https://bioconductor.org/packages/release/bioc/html/ANCOMBC.html](https://bioconductor.org/packages/release/bioc/html/ANCOMBC.html)
+- 🎓 **教程**: [https://bioconductor.org/packages/release/bioc/vignettes/ANCOMBC/inst/doc/ANCOMBC.html](https://bioconductor.org/packages/release/bioc/vignettes/ANCOMBC/inst/doc/ANCOMBC.html)
+- 📄 **论文**: Lin et al. (2020) Analysis of compositions of microbiomes with bias correction. *Nature Communications*. DOI: [10.1038/s41467-020-17041-7](https://doi.org/10.1038/s41467-020-17041-7)
+
+### 相关工具
+
+- [ALDEx2](./aldex2)
+- [DESeq2](./deseq2)
+- [LEfSe](./lefse)
+
+### 相关概念
+
+- [Compositional Data Analysis](../concepts/compositional-data-analysis)
+
 ---
 
 *最后更新: 2026-03-30*

@@ -64,3 +64,15 @@ strainphlan -s SRS014464.bz2 --output_dir output --nprocs 4 --marker_in_n_marker
 | `--output_file` | 输出文件 | stdout |
 | `--tax_lev` | 分类级别 (t/p/c/o/f/g/s) | 'a' (all) |
 | `--unclassified_estimation` | 估算未分类比例 | 关闭 |
+
+## 参考资源
+
+- 📖 **官方文档**: [https://github.com/biobakery/MetaPhlAn/wiki/MetaPhlAn-4](https://github.com/biobakery/MetaPhlAn/wiki/MetaPhlAn-4)
+- 🎓 **教程**: [https://github.com/biobakery/MetaPhlAn/wiki/MetaPhlAn-4#quick-start](https://github.com/biobakery/MetaPhlAn/wiki/MetaPhlAn-4#quick-start)
+- 📄 **论文**: Blanco-Míguez et al. (2023) Extending and improving metagenomic taxonomic profiling with uncharacterized species using MetaPhlAn 4. *Nature Biotechnology*. DOI: [10.1038/s41587-023-01688-w](https://doi.org/10.1038/s41587-023-01688-w)
+
+### 相关工具
+
+- [HUMAnN 3](./humann_3)
+- [StrainPhlAn](./strainphlan)
+- [Kraken 2](./kraken_2)

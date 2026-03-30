@@ -36,6 +36,22 @@ Rapid & standardized annotation of bacterial genomes, MAGs & plasmids
 
 > 📝 更多使用示例请参考官方文档。
 
+## 参考资源
+
+- 📖 **官方文档**: [https://github.com/oschwengers/bakta](https://github.com/oschwengers/bakta)
+- 🎓 **教程**: [https://github.com/oschwengers/bakta#usage](https://github.com/oschwengers/bakta#usage)
+- 📄 **论文**: Schwengers et al. (2021) Bakta: rapid and standardized annotation of bacterial genomes. *Microbial Genomics*. DOI: [10.1099/mgen.0.000685](https://doi.org/10.1099/mgen.0.000685)
+
+### 相关工具
+
+- [Prokka](./prokka)
+- [eggNOG-mapper](./eggnog_mapper)
+- [DRAM](./dram)
+
+### 相关概念
+
+- [Functional Vs Taxonomic](../concepts/functional-vs-taxonomic)
+
 ---
 
 *最后更新: 2026-03-30*

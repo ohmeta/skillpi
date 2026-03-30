@@ -36,6 +36,22 @@ conda install -c bioconda pharokka
 
 > 📝 更多使用示例请参考官方文档。
 
+## 参考资源
+
+- 📖 **官方文档**: [https://github.com/gbouras13/pharokka](https://github.com/gbouras13/pharokka)
+- 🎓 **教程**: [https://pharokka.readthedocs.io/en/latest/](https://pharokka.readthedocs.io/en/latest/)
+- 📄 **论文**: Bouras et al. (2023) Pharokka: a fast scalable bacteriophage annotation tool. *Bioinformatics*. DOI: [10.1093/nargab/lqad054](https://doi.org/10.1093/nargab/lqad054)
+
+### 相关工具
+
+- [VirSorter 2](./virsorter_2)
+- [PHASTER](./phaster)
+- [CheckV](./checkv)
+
+### 相关概念
+
+- [Genome Resolved Metagenomics](../concepts/genome-resolved-metagenomics)
+
 ---
 
 *最后更新: 2026-03-30*

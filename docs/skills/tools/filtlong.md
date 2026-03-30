@@ -35,6 +35,21 @@ conda install -c bioconda filtlong
 
 > 📝 更多使用示例请参考官方文档。
 
+## 参考资源
+
+- 📖 **官方文档**: [https://github.com/rrwick/Filtlong](https://github.com/rrwick/Filtlong)
+- 🎓 **教程**: [https://github.com/rrwick/Filtlong#usage](https://github.com/rrwick/Filtlong#usage)
+
+### 相关工具
+
+- [NanoPlot](./nanoplot)
+- [fastp](./fastp)
+- [Chopper](./chopper)
+
+### 相关概念
+
+- [Quality Control](../concepts/quality-control)
+
 ---
 
 *最后更新: 2026-03-30*

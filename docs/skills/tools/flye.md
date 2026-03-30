@@ -36,6 +36,22 @@ De novo assembler for single molecule sequencing reads using repeat graphs
 
 > 📝 更多使用示例请参考官方文档。
 
+## 参考资源
+
+- 📖 **官方文档**: [https://github.com/fenderglass/Flye/blob/flye/docs/USAGE.md](https://github.com/fenderglass/Flye/blob/flye/docs/USAGE.md)
+- 🎓 **教程**: [https://github.com/fenderglass/Flye/blob/flye/docs/USAGE.md](https://github.com/fenderglass/Flye/blob/flye/docs/USAGE.md)
+- 📄 **论文**: Kolmogorov et al. (2019) Assembly of long, error-prone reads using repeat graphs. *Nature Biotechnology*. DOI: [10.1038/s41587-019-0072-8](https://doi.org/10.1038/s41587-019-0072-8)
+
+### 相关工具
+
+- [Canu](./canu)
+- [MEGAHIT](./megahit)
+- [metaSPAdes](./metaspades)
+
+### 相关概念
+
+- [Metagenome Assembled Genomes](../concepts/metagenome-assembled-genomes)
+
 ---
 
 *最后更新: 2026-03-30*

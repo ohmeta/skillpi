@@ -74,3 +74,19 @@ megahit -1 R1.fq.gz -2 R2.fq.gz --presets meta-large -o megahit_out --min-contig
 | `-t / --num-cpu-threads` | 线程数 | CPU 核心数 |
 | `--min-contig-len` | 最小 contig 长度 | 200 |
 | `--presets` | 预设 (meta-sensitive/meta-large) | meta |
+
+## 参考资源
+
+- 📖 **官方文档**: [https://github.com/voutcn/megahit/wiki](https://github.com/voutcn/megahit/wiki)
+- 🎓 **教程**: [https://github.com/voutcn/megahit/wiki](https://github.com/voutcn/megahit/wiki)
+- 📄 **论文**: Li et al. (2015) MEGAHIT: an ultra-fast single-node solution for large and complex metagenomics assembly via succinct de Bruijn graph. *Bioinformatics*. DOI: [10.1093/bioinformatics/btv033](https://doi.org/10.1093/bioinformatics/btv033)
+
+### 相关工具
+
+- [metaSPAdes](./metaspades)
+- [Flye](./flye)
+- [Canu](./canu)
+
+### 相关概念
+
+- [Metagenome Assembled Genomes](../concepts/metagenome-assembled-genomes)

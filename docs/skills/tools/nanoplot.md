@@ -35,6 +35,22 @@ Oxford Nanopore 测序数据质量控制和可视化工具
 
 > 📝 更多使用示例请参考官方文档。
 
+## 参考资源
+
+- 📖 **官方文档**: [https://github.com/wdecoster/NanoPlot](https://github.com/wdecoster/NanoPlot)
+- 🎓 **教程**: [https://github.com/wdecoster/NanoPlot#usage](https://github.com/wdecoster/NanoPlot#usage)
+- 📄 **论文**: De Coster et al. (2018) NanoPlot: plot quality statistics and filtering for long read sequencing data. *Source Code for Biology and Medicine*. DOI: [10.1186/s13029-018-0073-4](https://doi.org/10.1186/s13029-018-0073-4)
+
+### 相关工具
+
+- [Filtlong](./filtlong)
+- [Chopper](./chopper)
+- [FastQC](./fastqc)
+
+### 相关概念
+
+- [Quality Control](../concepts/quality-control)
+
 ---
 
 *最后更新: 2026-03-30*

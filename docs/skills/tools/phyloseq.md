@@ -38,6 +38,22 @@ phyloseq is a set of classes, wrappers, and tools (in R) to make it easier to im
 
 > 📝 更多使用示例请参考官方文档。
 
+## 参考资源
+
+- 📖 **官方文档**: [https://joey711.github.io/phyloseq/](https://joey711.github.io/phyloseq/)
+- 🎓 **教程**: [https://joey711.github.io/phyloseq/phyloseq-quick-start-demo.html](https://joey711.github.io/phyloseq/phyloseq-quick-start-demo.html)
+- 📄 **论文**: McMurdie & Holmes (2013) phyloseq: An R Package for Reproducible Interactive Analysis and Graphics of Microbiome Census Data. *PLOS ONE*. DOI: [10.1371/journal.pone.0061217](https://doi.org/10.1371/journal.pone.0061217)
+
+### 相关工具
+
+- [DESeq2](./deseq2)
+- [ANCOM-BC](./ancom_bc)
+- [microeco](./microeco)
+
+### 相关概念
+
+- [Compositional Data Analysis](../concepts/compositional-data-analysis)
+
 ---
 
 *最后更新: 2026-03-30*

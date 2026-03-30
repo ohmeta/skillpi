@@ -37,6 +37,22 @@ GTDB-Tk: a toolkit for assigning objective taxonomic classifications to bacteria
 
 > 📝 更多使用示例请参考官方文档。
 
+## 参考资源
+
+- 📖 **官方文档**: [https://github.com/Ecogenomics/GTDBTk](https://github.com/Ecogenomics/GTDBTk)
+- 🎓 **教程**: [https://ecogenomics.github.io/GTDBTk/commands/classify_wf.html](https://ecogenomics.github.io/GTDBTk/commands/classify_wf.html)
+- 📄 **论文**: Chaumeil et al. (2022) GTDB-Tk v2: memory friendly classification with the Genome Taxonomy Database. *Bioinformatics*. DOI: [10.1093/bioinformatics/btac672](https://doi.org/10.1093/bioinformatics/btac672)
+
+### 相关工具
+
+- [CheckM2](./checkm2)
+- [MetaBAT 2](./metabat_2)
+- [anvi'o](./anvio)
+
+### 相关概念
+
+- [Functional Vs Taxonomic](../concepts/functional-vs-taxonomic)
+
 ---
 
 *最后更新: 2026-03-30*

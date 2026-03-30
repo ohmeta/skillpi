@@ -37,6 +37,21 @@ MetaPhlAn is a computational tool for profiling the composition of microbial com
 
 > 📝 更多使用示例请参考官方文档。
 
+## 参考资源
+
+- 📖 **官方文档**: [https://github.com/biobakery/MetaPhlAn/wiki/StrainPhlAn-4](https://github.com/biobakery/MetaPhlAn/wiki/StrainPhlAn-4)
+- 🎓 **教程**: [https://github.com/biobakery/MetaPhlAn/wiki/StrainPhlAn-4](https://github.com/biobakery/MetaPhlAn/wiki/StrainPhlAn-4)
+- 📄 **论文**: Truong et al. (2015) MetaPhlAn2 for enhanced metagenomic taxonomic profiling. *Nature Methods*. DOI: [10.1038/nmeth.3589](https://doi.org/10.1038/nmeth.3589)
+
+### 相关工具
+
+- [MetaPhlAn 4](./metaphlan_4)
+- [inStrain](./instrain)
+
+### 相关概念
+
+- [Metagenome Assembled Genomes](../concepts/metagenome-assembled-genomes)
+
 ---
 
 *最后更新: 2026-03-30*

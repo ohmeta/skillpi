@@ -36,6 +36,22 @@ R 包，用于微生物组数据的统计分析和可视化，支持多种数据
 
 > 📝 更多使用示例请参考官方文档。
 
+## 参考资源
+
+- 📖 **官方文档**: [https://github.com/ChiLiubio/microeco](https://github.com/ChiLiubio/microeco)
+- 🎓 **教程**: [https://chiliubio.github.io/microeco_tutorial/](https://chiliubio.github.io/microeco_tutorial/)
+- 📄 **论文**: Liu et al. (2025) Protocol for using the R microeco package. *Nature Protocols*. DOI: [10.1038/s41596-025-01239-4](https://doi.org/10.1038/s41596-025-01239-4)
+
+### 相关工具
+
+- [phyloseq](./phyloseq)
+- [ANCOM-BC](./ancom_bc)
+- [vegan](./vegan)
+
+### 相关概念
+
+- [Compositional Data Analysis](../concepts/compositional-data-analysis)
+
 ---
 
 *最后更新: 2026-03-30*

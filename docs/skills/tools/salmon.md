@@ -36,6 +36,22 @@ conda install -c bioconda salmon
 
 > 📝 更多使用示例请参考官方文档。
 
+## 参考资源
+
+- 📖 **官方文档**: [https://salmon.readthedocs.io/en/latest/](https://salmon.readthedocs.io/en/latest/)
+- 🎓 **教程**: [https://salmon.readthedocs.io/en/latest/salmon.html](https://salmon.readthedocs.io/en/latest/salmon.html)
+- 📄 **论文**: Patro et al. (2017) Salmon provides fast and bias-aware quantification of transcript expression. *Nature Methods*. DOI: [10.1038/nmeth.4197](https://doi.org/10.1038/nmeth.4197)
+
+### 相关工具
+
+- [Kallisto](./kallisto)
+- [STAR](./star)
+- [featureCounts](./featurecounts)
+
+### 相关概念
+
+- [Metatranscriptomics](../concepts/metatranscriptomics)
+
 ---
 
 *最后更新: 2026-03-30*

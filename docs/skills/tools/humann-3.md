@@ -41,3 +41,15 @@ humann_renorm_table --input sample_genefamilies.tsv \
 ## 标签
 
 `metagenomics` `functional-profiling` `pathway-analysis` `metatranscriptomics`
+
+## 参考资源
+
+- 📖 **官方文档**: [https://github.com/biobakery/humann/wiki](https://github.com/biobakery/humann/wiki)
+- 🎓 **教程**: [https://github.com/biobakery/humann/wiki/HUMAnN-User-Guide](https://github.com/biobakery/humann/wiki/HUMAnN-User-Guide)
+- 📄 **论文**: Beghini et al. (2021) Integrating taxonomic, functional, and strain-level profiling of diverse microbial communities with bioBakery 3. *eLife*. DOI: [10.7554/eLife.65088](https://doi.org/10.7554/eLife.65088)
+
+### 相关工具
+
+- [MetaPhlAn 4](./metaphlan_4)
+- [StrainPhlAn](./strainphlan)
+- [LEfSe](./lefse)
