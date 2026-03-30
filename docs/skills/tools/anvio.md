@@ -35,7 +35,48 @@ An analysis and visualization platform for 'omics data
 
 ## 使用示例
 
-> 📝 更多使用示例请参考官方文档。
+
+## 使用示例
+
+```bash
+# 从 FASTA 创建 Contigs DB
+anvi-gen-contigs-database -f contigs.fa -o CONTIGS.db -n 'My project'
+
+# 运行 HMMs
+anvi-run-hmms -c CONTIGS.db -T 8
+
+# 运行 NCBI COGs
+anvi-run-ncbi-cogs -c CONTIGS.db -T 8
+
+# 导入 BAM 文件
+anvi-init-bam -b mapped.bam -o mapped-processed.bam
+anvi-profile -i mapped-processed.bam -c CONTIGS.db -o PROFILE -T 8
+
+# 合并多个样本
+anvi-merge */PROFILE/PROFILE.db -o MERGED -c CONTIGS.db
+
+# 交互式可视化
+anvi-interactive -p MERGED/PROFILE.db -c CONTIGS.db
+
+# 分箱和精炼
+anvi-cluster-contigs -p MERGED/PROFILE.db -c CONTIGS.db -C CONCOCT --driver concoct
+anvi-refine -p MERGED/PROFILE.db -c CONTIGS.db -C CONCOCT -b Bin_1
+```
+
+## 关键参数
+
+| 命令 | 说明 |
+|------|------|
+| `anvi-gen-contigs-database` | 创建 Contigs 数据库 |
+| `anvi-run-hmms` | 运行 HMM 搜索 |
+| `anvi-profile` | 生成样本 profile |
+| `anvi-merge` | 合并多个样本 |
+| `anvi-interactive` | 启动交互式界面 |
+| `anvi-cluster-contigs` | 自动分箱 |
+| `anvi-refine` | 手动精炼分箱 |
+| `anvi-export-gene-calls` | 导出基因预测 |
+
+> 📝 更多详细参数请参考官方文档。
 
 ---
 

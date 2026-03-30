@@ -34,7 +34,36 @@ The second version of the Kraken taxonomic sequence classification system
 
 ## 使用示例
 
-> 📝 更多使用示例请参考官方文档。
+
+## 使用示例
+
+```bash
+# 基本分类
+kraken2 --db /path/to/kraken2_db --output result.kreport --report result.report input_1.fastq input_2.fastq
+
+# 使用预建数据库
+kraken2 --db /path/to/kraken2_db --paired --output result.kreport --report result.report sample_1.fq.gz sample_2.fq.gz
+
+# 多线程加速
+kraken2 --db /path/to/kraken2_db --threads 16 --output result.kreport --report result.report input.fastq
+
+# 与 Bracken 配合估算丰度
+bracken -d /path/to/kraken2_db -i result.report -o result.bracken -r 150 -l S
+```
+
+## 关键参数
+
+| 参数 | 说明 | 默认值 |
+|------|------|--------|
+| `--db` | Kraken2 数据库路径 | 必需 |
+| `--output` | Kraken 格式输出 | 必需 |
+| `--report` | 报告文件 | 必需 |
+| `--threads` | 线程数 | 1 |
+| `--paired` | 配对模式 | 关闭 |
+| `--confidence` | 分类置信度阈值 | 0.05 |
+| `--minimum-hit-groups` | 最小命中组数 | 2 |
+
+> 📝 更多详细参数请参考官方文档。
 
 ---
 

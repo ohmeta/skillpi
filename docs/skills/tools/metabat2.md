@@ -34,7 +34,41 @@ conda install -c bioconda metabat 2
 
 ## 使用示例
 
-> 📝 更多使用示例请参考官方文档。
+
+## 使用示例
+
+```bash
+# 1. 先生成深度文件
+jgi_summarize_bam_contig_depths --outputDepth depth.txt assembly.bam
+
+# 2. 基本分箱
+metabat2 -i assembly.fa -a depth.txt -o bins/bin -t 8
+
+# 敏感模式（适合低覆盖数据）
+metabat2 -i assembly.fa -a depth.txt -o bins/bin --sensitive
+
+# 最小 contig 长度
+metabat2 -i assembly.fa -a depth.txt -o bins/bin --minContig 2500
+
+# 与多个 BAM 合并深度
+jgi_summarize_bam_contig_depths --outputDepth depth.txt sample1.bam sample2.bam sample3.bam
+metabat2 -i assembly.fa -a depth.txt -o bins/bin
+```
+
+## 关键参数
+
+| 参数 | 说明 | 默认值 |
+|------|------|--------|
+| `-i` | 组装 FASTA | 必需 |
+| `-a` | 深度文件 | 必需 |
+| `-o` | 输出前缀 | 必需 |
+| `-t` | 线程数 | 0 (全部) |
+| `--minContig` | 最小 contig 长度 | 2500 |
+| `--sensitive` | 敏感模式 | 关闭 |
+| `--maxP` | 最大分箱数 | 自动 |
+| `--seed` | 随机种子 | 不固定 |
+
+> 📝 更多详细参数请参考官方文档。
 
 ---
 

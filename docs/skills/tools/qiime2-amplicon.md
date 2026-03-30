@@ -49,3 +49,47 @@ qiime diversity core-metrics-phylogenetic \
 ## 标签
 
 `16S` `amplicon` `its` `analysis` `visualization` `reproducible`
+
+## 使用示例
+
+```bash
+# 导入数据
+qiime tools import \
+  --type 'SampleData[PairedEndSequencesWithQuality]' \
+  --input-path manifest.csv \
+  --output-path paired-end-demux.qza \
+  --input-format PairedEndFastqManifestPhred33
+
+# DADA2 去噪
+qiime dada2 denoise-paired \
+  --i-demultiplexed-seqs paired-end-demux.qza \
+  --p-trunc-len-f 240 \
+  --p-trunc-len-r 200 \
+  --o-table table.qza \
+  --o-representative-sequences rep-seqs.qza \
+  --o-denoising-stats stats.qza
+
+# Alpha/Beta 多样性
+qiime diversity core-metrics-phylogenetic \
+  --i-phylogeny rooted-tree.qza \
+  --i-table table.qza \
+  --p-sampling-depth 10000 \
+  --output-dir core-metrics-results
+
+# 分类注释
+qiime feature-classifier classify-sklearn \
+  --i-classifier classifier.qza \
+  --i-reads rep-seqs.qza \
+  --o-classification taxonomy.qza
+```
+
+## 关键参数
+
+| 命令 | 说明 |
+|------|------|
+| `qiime tools import` | 导入数据 |
+| `qiime dada2 denoise-paired` | DADA2 去噪 |
+| `qiime diversity core-metrics-phylogenetic` | 多样性分析 |
+| `qiime feature-classifier classify-sklearn` | 分类注释 |
+| `qiime taxa barplot` | 分类柱状图 |
+| `qiime emperor plot` | PCoA 3D 可视化 |

@@ -18,6 +18,7 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '工具', link: '/skills/tools' },
+      { text: '文献', link: '/skills/publications' },
       { text: '工作流', link: '/skills/workflows' },
       { text: '概念', link: '/skills/concepts' },
       { text: '关于', link: '/about' }
@@ -30,8 +31,22 @@ export default defineConfig({
           text: '技能目录',
           items: [
             { text: '工具列表 (51个)', link: '/skills/tools' },
+            { text: '最新文献', link: '/skills/publications' },
             { text: '工作流', link: '/skills/workflows' },
             { text: '概念', link: '/skills/concepts' }
+          ]
+        },
+        {
+          text: '核心概念',
+          collapsed: false,
+          items: [
+            { text: '16S rRNA 测序', link: '/skills/concepts/16s-rrna-sequencing' },
+            { text: '宏基因组测序', link: '/skills/concepts/metagenomics-sequencing' },
+            { text: 'Alpha 多样性', link: '/skills/concepts/alpha-diversity' },
+            { text: '宏基因组组装基因组 (MAG)', link: '/skills/concepts/metagenome-assembled-genomes' },
+            { text: 'GTDB 分类学框架', link: '/skills/concepts/gtdb-taxonomy' },
+            { text: '组成性数据分析 (CoDA)', link: '/skills/concepts/compositional-data-analysis' },
+            { text: '批次效应', link: '/skills/concepts/batch-effects' },
           ]
         },
         {

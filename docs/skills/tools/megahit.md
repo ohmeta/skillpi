@@ -43,3 +43,34 @@ megahit --continue -o output_dir
 ## 标签
 
 `metagenomics` `assembly` `de-bruijn-graph` `memory-efficient`
+
+## 使用示例
+
+```bash
+# 宏基因组组装（配对端）
+megahit -1 R1.fq.gz -2 R2.fq.gz -o megahit_out --num-cpu-threads 16
+
+# 交错配对模式
+megahit --12 interleaved.fq.gz -o megahit_out -t 16
+
+# 长读长组装
+megahit --long long_reads.fq.gz -o megahit_out_lr
+
+# 混合组装（短+长读长）
+megahit -1 R1.fq.gz -2 R2.fq.gz --long long_reads.fq.gz -o megahit_out_hybrid
+
+# 使用预设参数
+megahit -1 R1.fq.gz -2 R2.fq.gz --presets meta-large -o megahit_out --min-contig-len 1000
+```
+
+## 关键参数
+
+| 参数 | 说明 | 默认值 |
+|------|------|--------|
+| `-1 / -2` | 配对端输入 | 可选 |
+| `--12` | 交错配对输入 | 可选 |
+| `--long` | 长读长输入 | 可选 |
+| `-o` | 输出目录 | megahit_out |
+| `-t / --num-cpu-threads` | 线程数 | CPU 核心数 |
+| `--min-contig-len` | 最小 contig 长度 | 200 |
+| `--presets` | 预设 (meta-sensitive/meta-large) | meta |

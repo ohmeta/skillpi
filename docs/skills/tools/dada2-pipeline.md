@@ -49,3 +49,58 @@ seqtab <- makeSequenceTable(mergers)
 ## 标签
 
 `16S` `denoising` `ASV` `amplicon` `R` `bioconductor`
+
+## 使用示例
+
+```bash
+# R 语言使用
+library(dada2)
+
+# 1. 读取文件路径
+fnFs <- sort(list.files("fastq/", pattern="_R1_001.fastq.gz", full.names=TRUE))
+fnRs <- sort(list.files("fastq/", pattern="_R2_001.fastq.gz", full.names=TRUE))
+
+# 2. 质量过滤
+filtered <- filterAndTrim(fnFs, filtFs, fnRs, filtRs,
+                          truncLen=c(240,200),
+                          maxN=0, maxEE=c(2,2),
+                          truncQ=2, rm.phix=TRUE,
+                          compress=TRUE, multithread=TRUE)
+
+# 3. 学习错误模型
+errF <- learnErrors(filtFs, multithread=TRUE)
+errR <- learnErrors(filtRs, multithread=TRUE)
+
+# 4. 去重
+derepFs <- derepFastq(filtFs)
+derepRs <- derepFastq(filtRs)
+
+# 5. 去噪
+dadaFs <- dada(derepFs, err=errF, multithread=TRUE)
+dadaRs <- dada(derepRs, err=errR, multithread=TRUE)
+
+# 6. 合并配对
+mergers <- mergePairs(dadaFs, derepFs, dadaRs, derepRs)
+
+# 7. 构建 ASV 表
+seqtab <- makeSequenceTable(mergers)
+
+# 8. 去嵌合体
+seqtab.nochim <- removeBimeraDenovo(seqtab, method="consensus")
+
+# 9. 分类注释
+taxa <- assignTaxonomy(seqtab.nochim, "silva_nr99_v138.1_train_set.fa.gz")
+```
+
+## 关键参数
+
+| 函数 | 说明 |
+|------|------|
+| `filterAndTrim()` | 质量过滤和修剪 |
+| `learnErrors()` | 学习测序错误模型 |
+| `derepFastq()` | 快速去重 |
+| `dada()` | 核心去噪算法 |
+| `mergePairs()` | 合并配对端 |
+| `makeSequenceTable()` | 构建 ASV 表 |
+| `removeBimeraDenovo()` | 去嵌合体 |
+| `assignTaxonomy()` | 分类注释 |

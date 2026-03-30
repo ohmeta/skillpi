@@ -34,7 +34,35 @@ Assessing the quality of metagenome-derived genome bins using machine learning
 
 ## 使用示例
 
-> 📝 更多使用示例请参考官方文档。
+
+## 使用示例
+
+```bash
+# 预测基因组质量
+checkm2 predict --threads 8 --input bins/ --output-directory checkm2_output
+
+# 指定输出格式
+checkm2 predict --threads 8 --input bins/ --output-directory checkm2_output --output-format tab
+
+# 使用 Diamond 而非 MMseqs2（更快）
+checkm2 predict --threads 8 --input bins/ --output-directory checkm2_output --database_path /path/to/CheckM2_database
+
+# 查看结果
+cat checkm2_output/quality_report.tsv
+```
+
+## 关键参数
+
+| 参数 | 说明 | 默认值 |
+|------|------|--------|
+| `--input` | MAG 目录或文件列表 | 必需 |
+| `--output-directory` | 输出目录 | 必需 |
+| `--threads` | 线程数 | 1 |
+| `--output_format` | 输出格式 (tab/csv) | tab |
+| `--database_path` | CheckM2 数据库路径 | 内置 |
+| `--extension` | 基因组文件扩展名 | fasta |
+
+> 📝 更多详细参数请参考官方文档。
 
 ---
 
